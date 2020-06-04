@@ -1,0 +1,121 @@
+body{
+    margin:0;
+}
+.boom{
+    font-size:0.9em;
+    text-decoration: none;
+    color:#484848;
+}
+.boomtwo{
+    font-size:0.9em;
+}
+.boomthird{
+    text-decoration: none;
+    color:#08a0e9;
+}
+button{
+    margin:0;
+}
+html,body{
+    height:100%;
+}
+#foot{
+    padding-top:15px;
+    text-align: center;
+    color:black;
+    font-family: 'ABeeZee';
+    font-size: 0.9em;
+  
+}
+.foot{
+    padding:0px 3px;
+    border-right:thin solid black;
+    border-left:thin solid black;
+}
+.grid-container{
+    display:grid;
+    height:100%;
+    background-color:#a9a9a9;
+    grid-template-columns: auto ;
+    grid-template-rows: 170px 70px auto 80px;
+    grid-row-gap: 1px;
+}
+.grid-container > div{
+    background-color: #778899;
+}
+input{
+    background-color: transparent;
+}
+.item1{
+    background-image: url("peak.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: left;
+    padding:60px 0px 60px 0px;
+    font-size: 50px;
+    text-align: center;
+    font-family: 'Amaranth';
+}
+#item31{
+    width:400px;
+    background-color: white;
+    margin:auto;
+    text-align: center;
+    padding:40px 0px 20px;
+}
+#item32{
+    display:none;
+    width:400px;
+    background-color: white;
+    margin:auto;
+    text-align: center;
+    padding:40px 0px 20px;
+}
+li{
+    float:left;
+    padding:22.5px 0px 22.5px 0px;
+}
+li a{
+    padding:0px 65px 0px 65px;
+    text-decoration: none;
+    font-size:25px;
+    color:black;
+}
+#note{
+    text-transform: uppercase;
+    color:#654321;
+ 
+}
+.typetwo{
+    border:1px solid white;
+    padding:10px ;
+    width:150px;
+    border-radius:2em;
+    margin-top:15px;
+    cursor:pointer;
+    background-color:#654321;
+    color:white;
+   
+}
+ul{
+    list-style-type: none;
+    margin:0;
+    padding:0;
+}
+#username, #passcode{
+    width:60%;
+    height:35px;
+    margin-bottom:8px;
+    border:none;
+    border-bottom:thin solid #654321 ;
+}
+#username, #email{
+    padding-top:18px;
+}
+#rusername, #email, #passcode2{
+    width:60%;
+    height:35px;
+    margin-bottom:8px;
+    border:none;
+    border-bottom:thin solid #654321 ;
+}
