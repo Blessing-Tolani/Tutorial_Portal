@@ -1,3 +1,4 @@
+
 body{
     margin:0;
 }
@@ -16,9 +17,50 @@ body{
 button{
     margin:0;
 }
+.but1, .but2{
+    display:none;
+}
 html,body{
     height:100%;
 }
+.dropbtn{
+    display:none;
+    color:black;
+    position: absolute;
+    left:0;
+    margin-left:20px;
+    padding: 18px 10px 0px 0px;
+    /* font-size: 17px; */
+}
+
+.not:hover{
+    background-color: #654321;
+    color:white;
+}
+.content{
+    background-color: #f1f1f1;
+    font-size:14px;
+    display:none;
+    position:absolute;
+    left: 0;
+    margin-left: -1rem;
+    z-index:1;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+   
+}
+.content a{
+    padding:12px 120px 16px 16px;
+}
+.fa-align-justify{
+    color:black;
+}
+.fa-graduation-cap{
+    padding-right:10px;
+}
+.fa-sign-in-alt, .fa-user-circle{
+    padding-right:10px;
+}
+
 #foot{
     padding-top:15px;
     text-align: center;
@@ -31,6 +73,11 @@ html,body{
     padding:0px 3px;
     border-right:thin solid black;
     border-left:thin solid black;
+}
+.gmail,.linkedin{
+    padding:7px;
+    color:black;
+    font-size:1.1em;
 }
 .grid-container{
     display:grid;
@@ -46,48 +93,70 @@ html,body{
 input{
     background-color: transparent;
 }
+img{
+    max-width:100%;
+    padding:40px 15px 40px 0px;
+   
+}
+.but{
+    position: relative;
+    bottom:60px;
+    
+}
 .item1{
-    background-image: url("peak.jpg");
+    /* background-image: url("peak.jpg");
     background-size: contain;
-    background-repeat: no-repeat;
-    background-position: left;
-    padding:60px 0px 60px 0px;
+    background-repeat: no-repeat; */
+    /* background-position: left; */
+
     font-size: 50px;
     text-align: center;
     font-family: 'Amaranth';
 }
+.item2{
+    text-align: center;
+}
 #item31{
     width:400px;
-    background-color: white;
+    background-color:#f1f1f1;
     margin:auto;
     text-align: center;
     padding:40px 0px 20px;
+    position:relative;
+    top:50%;
+    transform: translateY(-50%);
+    
 }
 #item32{
     display:none;
     width:400px;
-    background-color: white;
+    background-color:#f1f1f1;
     margin:auto;
     text-align: center;
     padding:40px 0px 20px;
+    position:relative;
+    top:50%;
+    transform: translateY(-50%);
 }
 li{
     float:left;
     padding:22.5px 0px 22.5px 0px;
 }
 li a{
-    padding:0px 65px 0px 65px;
+    padding:0px 70px 0px 70px;
     text-decoration: none;
-    font-size:25px;
+    font-size:22px;
     color:black;
+    font-family: 'Artifika';
 }
 #note{
     text-transform: uppercase;
     color:#654321;
+    font-family: 'Open Sans', sans-serif;
  
 }
 .typetwo{
-    border:1px solid white;
+    border:1px solid #f1f1f1;
     padding:10px ;
     width:150px;
     border-radius:2em;
@@ -95,6 +164,7 @@ li a{
     cursor:pointer;
     background-color:#654321;
     color:white;
+    font-size: 0.9em;
    
 }
 ul{
@@ -102,7 +172,7 @@ ul{
     margin:0;
     padding:0;
 }
-#username, #passcode{
+#username, #password, #rusername, #email, #password2{
     width:60%;
     height:35px;
     margin-bottom:8px;
@@ -111,11 +181,4 @@ ul{
 }
 #username, #email{
     padding-top:18px;
-}
-#rusername, #email, #passcode2{
-    width:60%;
-    height:35px;
-    margin-bottom:8px;
-    border:none;
-    border-bottom:thin solid #654321 ;
 }

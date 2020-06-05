@@ -5,48 +5,63 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>practice1</title>
     <link rel="stylesheet" href="peak.css" type="text/css">
+    <link rel="stylesheet" href="peak1.css" type="text/css">
     <link href='https://fonts.googleapis.com/css?family=ABeeZee' rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=Amaranth' rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Artifika' rel="stylesheet">
    
 </head>
 <body>
     <div class="grid-container">
-        <div class="item1">Peak Tutors Student Portal</div>
+        <div class="item1"><img src="peak.jpg" height="90"><span class="but">Peak Tutors Student Portal</span>
+            <p class="but1">Student Portal</p>
+        </div>
         <div class="item2">
-            <nav>
+            <nav id="allow">
                 <ul>
                     <li>
-                        <a href="#">Home</a>
-                        <a href="#">Organization</a>
-                        <a href="#">Courses</a>
-                        <a href="#">Staff</a>
-                        <a href="#">Location</a>
-                        <a href="#">Enquires</a>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Organization</a></li>
+                        <li><a href="#">Courses</a></li>
+                        <li><a href="#">Staff</a></li>
+                        <li><a href="#">Enquires</a></li>
                     </li>
                 </ul>
             </nav>
+            <div class="dropbtn">
+                <a href="#"><i class="fas fa-align-justify fa-2x"></i></a>
+                <div class="content">
+                    <ul>
+                        <li> <a class="not" href="#">Home</a></li>
+                        <li> <a class="not" href="#">Organization</a></li>
+                        <li> <a class="not" href="#">Courses</a></li>
+                        <li> <a class="not" href="#">Staff</a></li>
+                        <li> <a class="not" href="#">Enquires</a></li>
+                    </ul> 
+                </div>
+            </div>
         </div> 
         <div class="item3">
             <div id="item31">
-                <span id="note">Student Login</span>
+                <i class="fas fa-graduation-cap fa-lg"></i><span id="note">Student Login</span>
                 <form id="login-form" method="POST">
                     <input type="text" id="username" name="username" placeholder="MATRIC NO" required> <br>
-                    <input type="password" id="passcode" name="passcode" placeholder="PassCode" required>
-                    <a class="boom" href="#"><p>Forgot passcode?</p></a>
-                    <button class="typetwo">Student Login</button> 
+                    <input type="password" id="password" name="password" placeholder="Password" required>
+                    <a class="boom" href="#"><p>Forgot password?</p></a>
+                    <button class="typetwo"><i class="fas fa-sign-in-alt fa-1x"></i>SIGN IN</button> 
                 </form>
                 <p class="boomtwo">New to Peak Tutors? 
                     <a id="signup-btn" class="boomthird" href="#">Register</a>
                 </p>
             </div>
            <div id="item32">
-            <span id="note">Register</span>
+            <i class="fas fa-graduation-cap fa-lg"></i><span id="note">Register</span>
                 <form id="signup-form" method="POST">
-                    <input type="email" id="email" name="email" placeholder="Email" required> <br>
+                    <input type="email" id="email" name="email" placeholder= "Email" required > <br>
                     <input type="text" id="rusername" name="rusername" placeholder="MATRIC NO" required> <br>
-                    <input type="password" id="passcode" name="passcode" placeholder="PassCode" value="" required> <br>
-                    <input type="password" id="passcode2" name="passcode2" placeholder="Confirm PassCode" value="" required> <br>
-                    <button class="typetwo" id="login-form">Register</button>
+                    <input type="password" id="password" name="password" placeholder="Password" value="" required> <br>
+                    <input type="password" id="password2" name="password2" placeholder="Confirm Password" value="" required> <br>
+                    <button class="typetwo" id="login-form"><i class="fas fa-user-circle fa-1x"></i>SIGN UP</button>
                 </form>
             </div>
         </div>
@@ -65,5 +80,6 @@
     </div>
     <script src="jqry.js"></script>
     <script src="peakt.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 </body>
 </html>

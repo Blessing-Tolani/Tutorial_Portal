@@ -12,8 +12,8 @@ function hideSignup (){
  }
  function validate (e) {
     e.preventDefault();
-    var pass = $("#passcode").val();
-    var confpass = $("#passcode2").val();
+    var pass = $("#password").val();
+    var confpass = $("#password2").val();
   
     if (pass !== confpass) {
       alert("Passcode don't match: Kindly re-enter the Confirm Passcode");
