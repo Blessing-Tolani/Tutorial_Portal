@@ -3,7 +3,7 @@
         background-size: 50% 100%;
       
     }
-    #item31{
+    #item31, #item32{
         margin-left:55%;
         
         
@@ -16,7 +16,7 @@
     }
     .item1{
         font-size: 40px;
-        padding:50px 0px 50px 0px;
+        padding:30px 0px 30px 0px;
     }
     #item31{
         width:500px;
@@ -61,6 +61,7 @@
     }
     .item1{
         font-size: 40px;
+        padding:30px 0px 30px 0px;
     }
 }
 @media screen and (max-width:900px){
@@ -84,6 +85,7 @@
 @media screen and (max-width:770px){
     .item1{
         font-size: 36px;
+        padding:32px 0px 32px 0px;
     }
     li a{
         padding:0px 14px 0px 14px;
@@ -104,6 +106,7 @@
     }
     .item1{
         font-size: 30px;
+        padding:35px 0px 35px 0px;
     }
     li a{
         padding:0px 12px 0px 12px;
@@ -125,8 +128,8 @@
         width:400px;
         padding:30px 0px 0px;
         position:relative;
-        top:8%;
-        transform: translateY(-8%);
+        top:12%;
+        transform: translateY(-12%);
        
     }
 
@@ -134,8 +137,8 @@
         width:400px;
         padding:30px 0px 20px;
         position:relative;
-        top:20%;
-        transform: translateY(-20%);
+        top:30%;
+        transform: translateY(-30%);
     }
     .typetwo{
         margin-top:15px;
@@ -145,7 +148,7 @@
     }
     .item1{
         font-size: 25px;
-        padding:52.5px 0px 52.5px 0px;
+        padding:37.5px 0px 37.5px 0px;
     }
     li a{
         padding:0px 2px 0px 2px;
@@ -160,9 +163,6 @@
     }
     .dropdown:hover .content{
         display:block;
-    }
-    .dropdown:hover .dropbtn{
-        color:gray;
     }
     .content a:hover{
         background-color: tomato;
@@ -189,16 +189,33 @@
     .content a{
         padding:25px 100px 25px 30px ;
     }
+    .typetwo{
+        margin-top:8px;
+    }
+    #username, #email{
+        padding-top:10px;
+    }
 }
 
-@media screen and (max-width:330px){
+@media screen and (max-width:400px){
     .item1{
-        font-size:18.5px;
+        font-size:25px;
+        padding:22.5px 0px 22.5px 0px;
         
     }
-    img{
-        padding:20px 0px 20px 0px;
+    .grid-container{
+        grid-template-rows: 70px 40px auto 80px;
     }
+    #item31{
+        padding:30px 0px 10px;
+    }
+    #item32{
+        padding:30px 0px 20px;
+    }
+    .dropbtn{
+        padding: 20px 0px 10px 0px;
+    }
+
 }
 @media screen and (max-width:305px){
     .item1{
@@ -207,21 +224,33 @@
     .content a{
         padding:25px 80px 25px 30px ;
     }
+    #item31{
+        padding:20px 0px 10px;
+    }
+    #item32{
+        padding:20px 0px 20px;
+    }
+    .item1{
+        font-size:22px;
+        padding:23px 0px 23px 0px;
+        
+    }
     
 }
 @media screen and (max-width:250px){
-    .but1{
-         font-size:19px;
-     }
+    .item1{
+        font-size:20px;
+        padding:25px 0px 25px 0px;
+        
+    }
+
+    
 }
 @media screen and (max-width:223px){
     .item1{
         text-align: center;
     }
-    .but1{
-         bottom:56px;
-         font-size:18px;
-     }
+   
 }
 
 
