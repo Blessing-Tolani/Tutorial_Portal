@@ -1,12 +1,13 @@
 @media screen and (min-width:1100px) and (min-height:600px){
     body{
         background-size: 50% 100%;
-      
+       
     }
     #item31, #item32{
-        margin-left:55%;
-        
-        
+        margin-left:60%;
+    }
+    #item1{
+        float:left;
     }
 }
 @media screen and (min-width:1024px){
@@ -14,18 +15,18 @@
         padding:0px 50px 0px 50px;
         font-size:22px;
     }
-    .item1{
+    #item1{
         font-size: 40px;
         padding:30px 0px 30px 0px;
     }
     #item31{
-        width:500px;
+        width:400px;
         padding:40px 0px 20px;
         top:40%;
         transform: translateY(-40%);
     }
     #item32{
-        width:500px;
+        width:400px;
         padding:40px 0px 40px;
         top:40%;
         transform: translateY(-40%);
@@ -53,15 +54,14 @@
     }
     #username, #password, #rusername, #email, #password2{
         width:60%;
-        height:35px;
         margin-bottom:20px;
     }
     .boomtwo{
         padding-top: 20px;
     }
-    .item1{
-        font-size: 40px;
-        padding:30px 0px 30px 0px;
+    #item1{
+        padding:31px 0px 31px 0px;
+        font-size: 38px;
     }
 }
 @media screen and (max-width:900px){
@@ -80,7 +80,6 @@
     .boomtwo{
         padding-top: 10px;
     }
-   
 }
 @media screen and (max-width:770px){
     .item1{
@@ -168,7 +167,7 @@
         background-color: tomato;
     }
     #username, #password, #rusername, #email, #password2{
-        margin-bottom:3px;
+        margin-bottom:15px;
     }
 }
 @media screen and (max-width:410px){
@@ -193,7 +192,7 @@
         margin-top:8px;
     }
     #username, #email{
-        padding-top:10px;
+        margin-top:10px;
     }
 }
 

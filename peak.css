@@ -1,10 +1,16 @@
+a.gmail:hover{
+    color: red;
+}
+a.linkedin:hover{
+    color:#0e76a8;
+}
 
 body{
     margin:0;
-    background-image: url("peak.jpg");
+    background-image: url("peak.jpg"), url("teach1.jpeg");
     background-repeat: no-repeat;
     background-size: 100% 100%;
-    background-position: left;
+    background-position: left, right;
     background-color: #7c5b4c;
 }
 .boom{
@@ -100,9 +106,9 @@ input{
 }
 
 .item1{
-    padding:25px 0px 25px 0px;
-    font-size: 50px;
+    padding:30px 0px 30px 0px;
     text-align: center;
+    font-size: 40px;
     font-family: 'Amaranth';
 }
 #item31{
@@ -172,11 +178,10 @@ ul{
 }
 #username, #password, #rusername, #email, #password2{
     width:60%;
-    height:35px;
-    margin-bottom:8px;
+    margin-bottom:15px;
     border:none;
     border-bottom:thin solid #654321 ;
 }
 #username, #email{
-    padding-top:18px;
+    margin-top:18px;
 }
