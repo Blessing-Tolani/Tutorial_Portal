@@ -6,18 +6,20 @@
     #item31, #item32{
         margin-left:60%;
     }
-    #item1{
-        float:left;
+    .item1{
+        text-align: left;
+        margin-left:6%;
     }
 }
 @media screen and (min-width:1024px){
-    li a{
+    .firstlinks{
         padding:0px 50px 0px 50px;
         font-size:22px;
     }
-    #item1{
+    .item1{
         font-size: 40px;
-        padding:30px 0px 30px 0px;
+        text-align: left;
+        padding-left:24px;
     }
     #item31{
         width:400px;
@@ -36,7 +38,7 @@
     }
 }
 @media screen and (max-width:1023px){
-    li a{
+    .firstlinks{
         padding:0px 50px 0px 50px;
         font-size:22px;
     }
@@ -59,7 +61,7 @@
     .boomtwo{
         padding-top: 20px;
     }
-    #item1{
+    .item1{
         padding:31px 0px 31px 0px;
         font-size: 38px;
     }
@@ -73,7 +75,7 @@
         width:500px;
         padding:40px 0px 20px;
     }
-    li a{
+    .firstlinks{
         padding:0px 30px 0px 30px;
         font-size:20px;
     }
@@ -86,7 +88,7 @@
         font-size: 36px;
         padding:32px 0px 32px 0px;
     }
-    li a{
+    .firstlinks{
         padding:0px 14px 0px 14px;
         font-size:20px;
     }
@@ -107,7 +109,7 @@
         font-size: 30px;
         padding:35px 0px 35px 0px;
     }
-    li a{
+    .firstlinks{
         padding:0px 12px 0px 12px;
         font-size:18px;
 
@@ -149,26 +151,52 @@
         font-size: 25px;
         padding:37.5px 0px 37.5px 0px;
     }
-    li a{
+    .firstlinks{
         padding:0px 2px 0px 2px;
         font-size:17px;
     }
-    
-    #allow{
-        display:none;
+    .line{
+        width:30px;
+        height:3px;
+        background-color: black;
+        margin:5px;
     }
-    .dropbtn{
-        display:block;
+    nav{
+        position:relative;
     }
-    .dropdown:hover .content{
-        display:block;
+    .hamburger{
+        position:absolute;
+        cursor:pointer;
+       transform: translateX(-5%,);
+        right:5%;
+        margin-top:17.5px;
+        z-index:2;
     }
-    .content a:hover{
-        background-color: tomato;
+    .nav-links{
+        background: tomato;
+        position:fixed;
+        height:30vh;
+        width:100%;
+        flex-direction: column;
+        z-index:1;
+        clip-path:circle(100px at 90% -80%);
+        -webkit-clip-path:circle(100px at 90% -80%);
+        transition: all 1s ease-out;
+       
+    }
+    .nav-links li a{
+        color:white;
+        font-size:16px;
+    }
+    .nav-links.open{
+        pointer-events: all;
+        clip-path:circle(300px at 50% -15%);
+        -webkit-clip-path:circle(300px at 50% -15%);
     }
     #username, #password, #rusername, #email, #password2{
         margin-bottom:15px;
     }
+  
 }
 @media screen and (max-width:410px){
     #item31{

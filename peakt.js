@@ -1,3 +1,12 @@
+const hamburger = document.querySelector(".hamburger");
+const navlinks = document.querySelector(".nav-links");
+const links = document.querySelectorAll(".nav-links li");
+
+hamburger.addEventListener('click', () => {
+  navlinks.classList.toggle("open");
+ 
+});
+
 $(document).ready(function () {
     $("#signup-btn").on('click', showSignup);
     $("#signup-form").on('submit', validate);

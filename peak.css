@@ -31,7 +31,7 @@ button{
 html,body{
     height:100%;
 }
-.dropdown{
+/* .dropdown{
     position: relative;
     display: inline-block;
 }
@@ -59,7 +59,7 @@ html,body{
     transition-duration: 0.4s;
     transition-timing-function: ease;
     transition-delay: 0s;
-}
+} */
 .fa-bars{
     color:black;
 }
@@ -69,7 +69,22 @@ html,body{
 .fa-sign-in-alt, .fa-user-circle{
     padding-right:10px;
 }
-
+nav.foam{
+    /* background:#5b78c7; */
+}
+.nav-links{
+    display: flex;
+    width:50%;
+    height:70px;
+    justify-content: space-around;
+    align-items: center;
+}
+.nav-links li a{
+    color:black;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: sans-serif;
+}
 #foot{
     padding-top:15px;
     text-align: center;
@@ -137,11 +152,11 @@ input{
     top:50%;
     transform: translateY(-50%);
 }
-li{
+.still{
     float:left;
     padding:24px 0px 24px 0px;
 }
-li a{
+.firstlinks{
     position:relative;
     bottom:24px;
     padding:0px 70px 0px 70px;
@@ -150,6 +165,7 @@ li a{
     color:black;
     font-family: 'Artifika';
 }
+
 #note{
     text-transform: uppercase;
     color:#654321;
@@ -174,6 +190,8 @@ li a{
 
 ul{
     list-style-type: none;
+    margin:0;
+    padding:0;
    
 }
 #username, #password, #rusername, #email, #password2{
@@ -183,5 +201,5 @@ ul{
     border-bottom:thin solid #654321 ;
 }
 #username, #email{
-    margin-top:18px;
+    margin-top:20px;
 }
