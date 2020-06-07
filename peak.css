@@ -31,35 +31,6 @@ button{
 html,body{
     height:100%;
 }
-/* .dropdown{
-    position: relative;
-    display: inline-block;
-}
-.dropbtn{
-    display:none;
-    color:black;
-    margin-left:25px;
-    padding: 30px 0px 10px 0px;
-}
-.content{
-    background-color: #f1f1f1;
-    font-size:14px;
-    display:none;
-    position:absolute;
-    z-index:1;
-    box-shadow: 0px 8px 20px 500px rgba(0,0,0,0.5);
-  
-}
-.content a{
-    color:black;
-    text-decoration: none;
-    display: block;
-    padding:25px 150px 25px 30px ;
-    transition-property: all;
-    transition-duration: 0.4s;
-    transition-timing-function: ease;
-    transition-delay: 0s;
-} */
 .fa-bars{
     color:black;
 }
@@ -68,9 +39,6 @@ html,body{
 }
 .fa-sign-in-alt, .fa-user-circle{
     padding-right:10px;
-}
-nav.foam{
-    /* background:#5b78c7; */
 }
 .nav-links{
     display: flex;
@@ -83,7 +51,14 @@ nav.foam{
     color:black;
     text-decoration: none;
     font-size: 20px;
-    font-family: sans-serif;
+    font-family:'Artifika';
+    cursor:pointer;
+}
+ a.admit:hover{
+    color:rgba(255,255,255,0.8);
+    border-bottom:2px solid rgba(255,255,255,0.8);
+    padding-bottom:5px;
+    
 }
 #foot{
     padding-top:15px;
@@ -151,19 +126,6 @@ input{
     position:relative;
     top:50%;
     transform: translateY(-50%);
-}
-.still{
-    float:left;
-    padding:24px 0px 24px 0px;
-}
-.firstlinks{
-    position:relative;
-    bottom:24px;
-    padding:0px 70px 0px 70px;
-    text-decoration: none;
-    font-size:22px;
-    color:black;
-    font-family: 'Artifika';
 }
 
 #note{

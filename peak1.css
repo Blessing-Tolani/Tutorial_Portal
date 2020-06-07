@@ -12,10 +12,6 @@
     }
 }
 @media screen and (min-width:1024px){
-    .firstlinks{
-        padding:0px 50px 0px 50px;
-        font-size:22px;
-    }
     .item1{
         font-size: 40px;
         text-align: left;
@@ -38,10 +34,6 @@
     }
 }
 @media screen and (max-width:1023px){
-    .firstlinks{
-        padding:0px 50px 0px 50px;
-        font-size:22px;
-    }
     #item31{
         width:500px;
         padding:60px 0px 20px;
@@ -75,10 +67,6 @@
         width:500px;
         padding:40px 0px 20px;
     }
-    .firstlinks{
-        padding:0px 30px 0px 30px;
-        font-size:20px;
-    }
     .boomtwo{
         padding-top: 10px;
     }
@@ -88,10 +76,7 @@
         font-size: 36px;
         padding:32px 0px 32px 0px;
     }
-    .firstlinks{
-        padding:0px 14px 0px 14px;
-        font-size:20px;
-    }
+
     #password{
         margin-bottom:3px;
     }
@@ -109,22 +94,21 @@
         font-size: 30px;
         padding:35px 0px 35px 0px;
     }
-    .firstlinks{
-        padding:0px 12px 0px 12px;
-        font-size:18px;
-
-    }
    
     .gmail,.linkedin{
         font-size:0.95em;
     }
-    /* .typetwo{
-        width:120px;
-    } */
+ 
 
 
 }
 @media screen and (max-width:540px){
+    a.admit:hover{
+        color:rgba(0,0,0,0.8);
+        border-bottom:2px solid rgba(0,0,0,0.8);
+        padding-bottom:5px;
+        
+    }
     #item31{
         width:400px;
         padding:30px 0px 0px;
@@ -151,10 +135,6 @@
         font-size: 25px;
         padding:37.5px 0px 37.5px 0px;
     }
-    .firstlinks{
-        padding:0px 2px 0px 2px;
-        font-size:17px;
-    }
     .line{
         width:30px;
         height:3px;
@@ -167,7 +147,7 @@
     .hamburger{
         position:absolute;
         cursor:pointer;
-       transform: translateX(-5%,);
+        transform: translateX(-5%);
         right:5%;
         margin-top:17.5px;
         z-index:2;
@@ -179,8 +159,8 @@
         width:100%;
         flex-direction: column;
         z-index:1;
-        clip-path:circle(100px at 90% -80%);
-        -webkit-clip-path:circle(100px at 90% -80%);
+        clip-path:circle(100px at 90% -120%);
+        -webkit-clip-path:circle(100px at 90% -120%);
         transition: all 1s ease-out;
        
     }
@@ -213,9 +193,6 @@
     .item1{
         font-size:25px;
     }
-    .content a{
-        padding:25px 100px 25px 30px ;
-    }
     .typetwo{
         margin-top:8px;
     }
@@ -229,6 +206,9 @@
         font-size:25px;
         padding:22.5px 0px 22.5px 0px;
         
+    }
+    .hamburger{
+        margin-top:2.5px;
     }
     .grid-container{
         grid-template-rows: 70px 40px auto 80px;
@@ -247,9 +227,6 @@
 @media screen and (max-width:305px){
     .item1{
         text-align: center;
-    }
-    .content a{
-        padding:25px 80px 25px 30px ;
     }
     #item31{
         padding:20px 0px 10px;
