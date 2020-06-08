@@ -11,7 +11,7 @@ body{
     background-repeat: no-repeat;
     background-size: 100% 100%;
     background-position: left, right;
-    background-color: #7c5b4c;
+    background-color: #715144;
 }
 .boom{
     font-size:0.9em;
@@ -52,15 +52,15 @@ html,body{
     align-items: center;
 }
 .nav-links li a{
-    color:#990011ff;
+    color:#f2d2ac;
     text-decoration: none;
     font-size: 22px;
     font-family:'Poppins';
     cursor:pointer;
 }
  a.admit:hover{
-    color:rgba(255,255,255,0.8);
-    border-bottom:2px solid rgba(255,255,255,0.8);
+    color:black;
+    border-bottom:2px solid black;
     padding-bottom:5px;
     
 }
@@ -87,7 +87,7 @@ html,body{
     height:100%;
     background-color: transparent;
     grid-template-columns: auto ;
-    grid-template-rows: 100px 70px auto 80px;
+    grid-template-rows: 90px 70px auto 80px;
     grid-row-gap: 1px;
 }
 .grid-container > div{
@@ -100,10 +100,11 @@ input{
 }
 
 .item1{
-    color:black;
-    padding:30px 0px 30px 0px;
+    background-image:linear-gradient(#715144, #715144);
+    color: #f2d2ac;
+    padding:12px 0px 12px 0px;
     text-align: center;
-    font-size: 40px;
+    font-size: 55px;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 #item31{

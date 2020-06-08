@@ -16,7 +16,9 @@
 }
 @media screen and (min-width:1024px){
     .item1{
-        font-size: 40px;
+        font-size: 55px;
+        padding:12px 0px 12px 0px;
+        
     }
     #item31{
         width:400px;
@@ -59,8 +61,8 @@
         padding-top: 20px;
     }
     .item1{
-        padding:31px 0px 31px 0px;
-        font-size: 38px;
+        padding:15px 0px 15px 0px;
+        font-size: 50px;
     }
 }
 @media screen and (max-width:900px){
@@ -78,12 +80,16 @@
     .nav-links li a{
         font-size: 20px;
     }
+    .item1{
+        padding:16px 0px 16px 0px;
+        font-size: 48px;
+    }
 }
 
 @media screen and (max-width:770px){
     .item1{
-        font-size: 36px;
-        padding:32px 0px 32px 0px;
+        font-size: 46px;
+        padding:17px 0px 17px 0px;
     }
 
     #password{
@@ -100,8 +106,8 @@
         padding:40px 0px 20px;
     }
     .item1{
-        font-size: 30px;
-        padding:35px 0px 35px 0px;
+        font-size: 44px;
+        padding:18px 0px 18px 0px;
     }
    
     .gmail,.linkedin{
@@ -138,16 +144,17 @@
         margin-top:15px;
     }
     .grid-container{
-        grid-template-rows: 110px 70px auto 90px;
+        grid-template-rows: 80px 70px auto 90px;
     }
     .item1{
-        font-size: 25px;
-        padding:37.5px 0px 37.5px 0px;
+        font-size: 30px;
+        font-weight: 650;
+        padding:20px 0px 20px 0px;
     }
     .hamburger div{
         width:25px;
         height:3px;
-        background-color: black;
+        background-color: #f2d2ac;
         margin:5px;
         transition:all 0.3s ease;
     }
@@ -226,7 +233,9 @@
         font-size:0.9em;
     }
     .item1{
-        font-size:25px;
+        font-size:30px;
+        font-weight: 650;
+        padding:20px 0px 20px 0px;
     }
     .typetwo{
         margin-top:8px;
@@ -239,6 +248,7 @@
 @media screen and (max-width:400px){
     .item1{
         font-size:25px;
+        font-weight: 650;
         padding:22.5px 0px 22.5px 0px;
         
     }
@@ -270,16 +280,18 @@
         padding:20px 0px 20px;
     }
     .item1{
-        font-size:22px;
-        padding:23px 0px 23px 0px;
+        font-size:20px;
+        font-weight:650;
+        padding:25px 0px 25px 0px;
         
     }
     
 }
 @media screen and (max-width:250px){
     .item1{
-        font-size:20px;
-        padding:25px 0px 25px 0px;
+        font-size:18px;
+        font-weight:650;
+        padding:26px 0px 26px 0px;
         
     }
 
