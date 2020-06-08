@@ -16,7 +16,10 @@ body{
 .boom{
     font-size:0.9em;
     text-decoration: none;
-    color:#484848;
+    color:#08a0e9;
+}
+.boom:hover, .boomthird:hover{
+    color:#5d4954;
 }
 .boomtwo{
     font-size:0.9em;
@@ -25,6 +28,7 @@ body{
     text-decoration: none;
     color:#08a0e9;
 }
+
 button{
     margin:0;
 }
@@ -48,10 +52,10 @@ html,body{
     align-items: center;
 }
 .nav-links li a{
-    color:black;
+    color:#990011ff;
     text-decoration: none;
-    font-size: 20px;
-    font-family:'Artifika';
+    font-size: 22px;
+    font-family:'Poppins';
     cursor:pointer;
 }
  a.admit:hover{
@@ -63,15 +67,15 @@ html,body{
 #foot{
     padding-top:15px;
     text-align: center;
-    color:black;
+    color:white;
     font-family: 'ABeeZee';
     font-size: 0.9em;
   
 }
 .foot{
     padding:0px 3px;
-    border-right:thin solid black;
-    border-left:thin solid black;
+    border-right:thin solid white;
+    border-left:thin solid white;
 }
 .gmail,.linkedin{
     padding:7px;
@@ -96,13 +100,14 @@ input{
 }
 
 .item1{
+    color:black;
     padding:30px 0px 30px 0px;
     text-align: center;
     font-size: 40px;
-    font-family: 'Amaranth';
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 #item31{
-    border:1px solid #f1f1f1;
+    border:1px solid #7f604d;
     border-radius: 1em;
     width:400px;
     background-color:#f1f1f1;
@@ -112,10 +117,12 @@ input{
     position:relative;
     top:50%;
     transform: translateY(-50%);
+    box-shadow: 0 0 20px #7f604d;
     
 }
 #item32{
-    border:1px solid #f1f1f1;
+    border:1px solid #7f604d;
+    box-shadow: 0 0 20px #7f604d;
     border-radius: 1em;
     display:none;
     width:400px;
@@ -140,7 +147,7 @@ input{
     border-radius:2em;
     margin-top:15px;
     cursor:pointer;
-    background-color:#7f604d;
+    background-color:#990011ff;
     color:white;
     font-size: 0.9em;
    

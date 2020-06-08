@@ -6,16 +6,17 @@
     #item31, #item32{
         margin-left:60%;
     }
-    .item1{
-        text-align: left;
-        margin-left:6%;
+
+}
+@media screen and (max-width:1100px) and (min-height:1000px){
+    .nav-links{
+        margin:0 auto;
     }
+
 }
 @media screen and (min-width:1024px){
     .item1{
         font-size: 40px;
-        text-align: left;
-        padding-left:24px;
     }
     #item31{
         width:400px;
@@ -33,7 +34,11 @@
         padding-top:20px;
     }
 }
+
 @media screen and (max-width:1023px){
+    .nav-links{
+        margin:0 auto;
+    }
     #item31{
         width:500px;
         padding:60px 0px 20px;
@@ -70,7 +75,11 @@
     .boomtwo{
         padding-top: 10px;
     }
+    .nav-links li a{
+        font-size: 20px;
+    }
 }
+
 @media screen and (max-width:770px){
     .item1{
         font-size: 36px;
@@ -135,11 +144,12 @@
         font-size: 25px;
         padding:37.5px 0px 37.5px 0px;
     }
-    .line{
-        width:30px;
+    .hamburger div{
+        width:25px;
         height:3px;
         background-color: black;
         margin:5px;
+        transition:all 0.3s ease;
     }
     nav{
         position:relative;
@@ -153,7 +163,7 @@
         z-index:2;
     }
     .nav-links{
-        background: tomato;
+        background-color:#990011ff;
         position:fixed;
         height:30vh;
         width:100%;
@@ -163,6 +173,9 @@
         -webkit-clip-path:circle(100px at 90% -120%);
         transition: all 1s ease-out;
        
+    }
+    .nav-links li{
+        opacity:0;
     }
     .nav-links li a{
         color:white;
@@ -175,6 +188,28 @@
     }
     #username, #password, #rusername, #email, #password2{
         margin-bottom:15px;
+    }
+    @keyframes navLinkFade{
+        from{
+            opacity:0;
+            transform:translate(50px);
+        }
+        to{
+            opacity:1;
+            transform:translate(0px);
+        }
+    }
+    .bum .line1{
+        transform: rotate(-405deg) translate(-5px,6px);
+        background-color: white;
+
+    }
+    .bum .line2{
+      opacity:0;
+    }
+    .bum .line3{
+        transform: rotate(405deg) translate(-5px,-6px);
+        background-color: white;
     }
   
 }
