@@ -25,12 +25,12 @@ $(document).ready(function () {
     $("#signup-form").on('submit', validate);
   });
 function showSignup (){
-    $("#item31").hide();
-    $("#item32").show();
+    $("#item3a").hide();
+    $("#item3b").show();
 }
 function hideSignup (){
-    $("#item31").show();
-    $("#item32").hide();
+    $("#item3a").show();
+    $("#item3b").hide();
  }
  function validate (e) {
     e.preventDefault();

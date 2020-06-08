@@ -1,147 +1,109 @@
-@media screen and (min-width:1100px) and (min-height:600px){
-    body{
-        background-size: 50% 100%;
-       
-    }
-    #item31, #item32{
-        margin-left:60%;
-    }
-
-}
 @media screen and (max-width:1100px) and (min-height:1000px){
     .nav-links{
         margin:0 auto;
     }
-
-}
-@media screen and (min-width:1024px){
-    .item1{
-        font-size: 55px;
-        padding:12px 0px 12px 0px;
+    #item3a, #item3b{
+        position: relative;
+        top:30%;
+        transform:translateY(-30%);
         
     }
-    #item31{
-        width:400px;
-        padding:40px 0px 20px;
-        top:40%;
-        transform: translateY(-40%);
-    }
-    #item32{
-        width:400px;
-        padding:40px 0px 40px;
-        top:40%;
-        transform: translateY(-40%);
-    }
-    .boomtwo{
+    .item1{
         padding-top:20px;
+        font-size: 50px;
+        font-weight: 600;
     }
 }
-
 @media screen and (max-width:1023px){
-    .nav-links{
-        margin:0 auto;
-    }
-    #item31{
-        width:500px;
-        padding:60px 0px 20px;
-        top:40%;
-        transform: translateY(-40%);
-    }
-    #item32{
-        width:500px;
-        padding:40px 0px 20px;
-        top:40%;
-        transform: translateY(-40%);
-    }
-    #username, #password, #rusername, #email, #password2{
-        width:60%;
-        margin-bottom:20px;
-    }
-    .boomtwo{
-        padding-top: 20px;
-    }
     .item1{
-        padding:15px 0px 15px 0px;
-        font-size: 50px;
+     
+        font-size: 45px;
+        font-weight: 600;
     }
+    html{
+        background-image: radial-gradient(circle,#243040 20%, #1e2a38 30%, #1b2531 40%, #161d27 50%,  #0a0e13 80% );
+        background-repeat: no-repeat;
+     }
 }
 @media screen and (max-width:900px){
-    #item31{
-        width:500px;
-        padding:40px 0px 15px;
+    html{
+        background-image: radial-gradient(circle,#243040 25%, #1e2a38 40%, #1b2531 50%, #161d27 60%,  #0a0e13 80% );
+       
+     }
+     #item3a, #item3b{
+        position: relative;
+        top:30%;
+        transform:translateY(-30%);
+        
     }
-    #item32{
-        width:500px;
-        padding:40px 0px 20px;
+     .item3a1{
+    
+        width:400px;
+        margin-top:30px;
+    }
+    .item3b1{
+        border:1px solid white;
+        border-radius:2em;
+        width:400px;
+        margin-top:20px;
     }
     .boomtwo{
         padding-top: 10px;
     }
     .nav-links li a{
-        font-size: 20px;
+        font-size: 18px;
     }
     .item1{
-        padding:16px 0px 16px 0px;
-        font-size: 48px;
+        padding-top:25px;
+        font-size: 40px;
+        font-weight: 600;
     }
 }
 
 @media screen and (max-width:770px){
+    html{
+        background-image: radial-gradient(circle,#243040 35%, #1e2a38 40%, #1b2531 50%, #161d27 60%,  #0a0e13 70% );
+        background-repeat: no-repeat;
+       
+     }
     .item1{
-        font-size: 46px;
-        padding:17px 0px 17px 0px;
+        font-size: 38px;
+        padding-top:26px;
+        font-weight: 600;
+       
     }
-
-    #password{
-        margin-bottom:3px;
+    #note{
+        font-size: 21px;
     }
 }
+
 @media screen and (max-width:600px){
-    #item31{
-        width:400px;
-        padding:40px 0px 0px;
-    }
-    #item32{
-        width:400px;
-        padding:40px 0px 20px;
-    }
     .item1{
-        font-size: 44px;
-        padding:18px 0px 18px 0px;
+        font-size: 38px;
+        padding-top:26px;
+        font-weight: 600;
     }
-   
     .gmail,.linkedin{
         font-size:0.95em;
     }
- 
-
-
 }
 @media screen and (max-width:540px){
+    html{
+        background-image: radial-gradient(circle,#243040 30%, #1e2a38 40%, #1b2531 50%, #161d27 60%, #0a0e13 80% );
+        background-repeat: no-repeat;
+     }
+     #note{
+        font-size: 20px;
+    }
     a.admit:hover{
         color:rgba(0,0,0,0.8);
         border-bottom:2px solid rgba(0,0,0,0.8);
         padding-bottom:5px;
-        
     }
-    #item31{
-        width:400px;
-        padding:30px 0px 0px;
-        position:relative;
-        top:12%;
-        transform: translateY(-12%);
-       
-    }
-
-    #item32{
-        width:400px;
-        padding:30px 0px 20px;
-        position:relative;
-        top:30%;
-        transform: translateY(-30%);
-    }
-    .typetwo{
-        margin-top:15px;
+    #item3a, #item3b{
+        position: relative;
+        top:20%;
+        transform:translateY(-20%);
     }
     .grid-container{
         grid-template-rows: 80px 70px auto 90px;
@@ -149,12 +111,12 @@
     .item1{
         font-size: 30px;
         font-weight: 650;
-        padding:20px 0px 20px 0px;
+        padding-top:25px;
     }
     .hamburger div{
         width:25px;
         height:3px;
-        background-color: #f2d2ac;
+        background-color: white;
         margin:5px;
         transition:all 0.3s ease;
     }
@@ -170,7 +132,7 @@
         z-index:2;
     }
     .nav-links{
-        background-color:#990011ff;
+        background-color:#243040;
         position:fixed;
         height:30vh;
         width:100%;
@@ -190,11 +152,8 @@
     }
     .nav-links.open{
         pointer-events: all;
-        clip-path:circle(300px at 50% -15%);
-        -webkit-clip-path:circle(300px at 50% -15%);
-    }
-    #username, #password, #rusername, #email, #password2{
-        margin-bottom:15px;
+        clip-path:circle(310px at 50% -15%);
+        -webkit-clip-path:circle(310px at 50% -15%);
     }
     @keyframes navLinkFade{
         from{
@@ -218,38 +177,50 @@
         transform: rotate(405deg) translate(-5px,-6px);
         background-color: white;
     }
-  
+        
+    .item3a1{
+        width:250px;
+        margin-top:30px;
+    }
+    .item3b1{
+        width:250px;
+        margin-top:20px;
+    }
+    .typetwo{
+        width:266px;
+        padding:8px;
+    }
+ 
+    #matricno, #password, #email, #password2{
+        width:70%;
+        font-size: 12px;
+    }
+    #password2{
+        width:45%;
+    }
+    .cup{
+        margin-top:30px;
+    }
 }
 @media screen and (max-width:410px){
-    #item31{
-        width:100%;
-        padding:50px 0px 20px;
-    }
-    #item32{
-        width:100%;
-        padding:50px 0px 20px;
-    }
+   
     .gmail,.linkedin{
         font-size:0.9em;
     }
     .item1{
         font-size:30px;
         font-weight: 650;
-        padding:20px 0px 20px 0px;
+       
     }
-    .typetwo{
-        margin-top:8px;
-    }
-    #username, #email{
-        margin-top:10px;
-    }
+  
+  
 }
 
 @media screen and (max-width:400px){
     .item1{
         font-size:25px;
         font-weight: 650;
-        padding:22.5px 0px 22.5px 0px;
+        padding-top:23px;
         
     }
     .hamburger{
@@ -258,32 +229,67 @@
     .grid-container{
         grid-template-rows: 70px 40px auto 80px;
     }
-    #item31{
-        padding:30px 0px 10px;
+    html{
+        background-image: radial-gradient(circle,#243040 30%, #1e2a38 40%, #1b2531 50%, #161d27 60%, #0a0e13 80% );
+        background-repeat: no-repeat;
+       
+     }
+     #note{
+        font-size: 18px;
     }
-    #item32{
-        padding:30px 0px 20px;
+    
+}
+@media screen and (max-width:315px){
+    .item3a1{
+        width:200px;
+        margin-top:30px;
     }
-    .dropbtn{
-        padding: 20px 0px 10px 0px;
+    .item3b1{
+        width:200px;
+        margin-top:20px;
+        
     }
-
+    .typetwo{
+        width:216px;
+        padding:8px;
+    }
+ 
+    #matricno, #password, #email, #password2{
+        width:60%;
+        font-size: 13px;
+    }
+    #password2{
+        width:90%;
+        color:white;
+        border-left:none;
+        font-size: 15px;
+    }
+    .cup{
+        margin-top:30px;
+    }
+    label{
+        font-size: 11px;
+    }
+    label[for=password2]{
+        display:none;
+    }
 }
 @media screen and (max-width:305px){
-    .item1{
-        text-align: center;
-    }
-    #item31{
-        padding:20px 0px 10px;
-    }
-    #item32{
-        padding:20px 0px 20px;
-    }
+   
     .item1{
         font-size:20px;
         font-weight:650;
-        padding:25px 0px 25px 0px;
+        padding-top:25px;
+        text-align: center;
         
+    }
+    html{
+        background-image: radial-gradient(circle,#243040 30%, #1e2a38 40%, #1b2531 50%, #161d27 60%, #0a0e13 90% );
+        background-repeat: no-repeat;
+       
+     }
+     #note{
+        font-size: 16px;
     }
     
 }
@@ -291,15 +297,73 @@
     .item1{
         font-size:18px;
         font-weight:650;
-        padding:26px 0px 26px 0px;
+        padding-top:26px;
         
     }
 
     
 }
-@media screen and (max-width:223px){
+@media screen and (max-width:278px){
+    .item3a1{
+        width:190px;
+    }
+    .item3b1{
+        width:190px;
+        
+    }
+    .typetwo{
+        width:206px;
+        padding:8px;
+    }
+ 
+    #matricno, #password, #email, #password2{
+        width:60%;
+        font-size: 13px;
+    }
+    #password2{
+        width:90%;
+        font-size: 13px;
+    }
+    .cup{
+        margin-top:25px;
+    }
+    label{
+        font-size: 10px;
+    }
+
+
+}
+@media screen and (max-width:213px){
     .item1{
         text-align: center;
+    }
+    .item3a1{
+        width:150px;
+    }
+    .item3b1{
+        width:150px;
+        
+    }
+    .typetwo{
+        width:166px;
+        padding:8px;
+    }
+ 
+    #matricno, #password, #email, #password2{
+        width:90%;
+        font-size: 13px;
+        border-left: none;
+    }
+    #password2{
+        width:90%;
+        font-size: 13px;
+    }
+    .cup{
+        margin-top:25px;
+    }
+    label{
+        display:none;
+        font-size: 10px;
     }
    
 }

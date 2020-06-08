@@ -12,7 +12,7 @@
 </head>
 <body>
     <div class="grid-container">
-        <div class="item1"><span class="you">Peak Tutors Student Portal</div>
+        <div class="item1"><span class="you">Peak <span class="nope">Tutors</span></div>
         <div class="item2">
             <nav>
                 <div class="hamburger">
@@ -28,28 +28,48 @@
             </nav>
         </div> 
         <div class="item3">
-            <div id="item31">
-                <i class="fas fa-graduation-cap fa-lg"></i><span id="note">Student Login</span>
+            <div id="item3a">
                 <form id="login-form" method="POST">
-                    <input type="text" id="username" name="username" placeholder="MATRIC NO" required> <br>
-                    <input type="password" id="password" name="password" placeholder="Password" required>
-                    <a class="boom" href="#"><p>Forgot password?</p></a>
-                    <button class="typetwo"><i class="fas fa-sign-in-alt fa-1x"></i>SIGN IN</button> 
+                   <span id="note">Welcome Back!</span>
+                    <div class="item3a1">
+                        <label for="matricno">MATRIC NO</label>
+                        <input type="text" id="matricno" name="matricno" placeholder="Enter Matric No" required> <br>
+                    </div>
+                    <div class="item3a1">
+                        <label for="password">PASSWORD</label>
+                        <input type="password" id="password" name="password" placeholder=" Enter Password" required>
+                    </div>
+                    <div class="item3a2">
+                        <a class="boom" href="#"><p>Forgot password?</p></a>
+                        <button class="typetwo"><i class="fas fa-sign-in-alt fa-1x"></i>SIGN IN</button> 
+                    </div>
                 </form>
                 <p class="boomtwo">New to Peak Tutors? 
                     <a id="signup-btn" class="boomthird" href="#">Register</a>
                 </p>
             </div>
-           <div id="item32">
-            <i class="fas fa-graduation-cap fa-lg"></i><span id="note">Register</span>
+           <div id="item3b">
+                <span id="note">REGISTER</span>
                 <form id="signup-form" method="POST">
-                    <input type="email" id="email" name="email" placeholder= "Email" required > <br>
-                    <input type="text" id="rusername" name="rusername" placeholder="MATRIC NO" required> <br>
-                    <input type="password" id="password" name="password" placeholder="Password" value="" required> <br>
-                    <input type="password" id="password2" name="password2" placeholder="Confirm Password" value="" required> <br>
-                    <button class="typetwo" id="login-form"><i class="fas fa-user-circle fa-1x"></i>SIGN UP</button>
+                    <div class="item3b1">
+                        <label for="email">EMAIL</label>
+                        <input type="email" id="email" name="email" placeholder= "Enter Email" required > <br>
+                    </div>
+                    <div class="item3b1">
+                        <label for="matricno">MATRIC NO</label>
+                        <input type="text" id="matricno" name="matricno" placeholder="Enter Matric No" required> <br>  
+                    </div>
+                    <div class="item3b1">
+                        <label for="password">PASSWORD</label>
+                        <input type="password" id="password" name="password" placeholder="Enter Password" value="" required> <br>
+                    </div>
+                    <div class="item3b1">
+                        <label for="password2">CONFIRM PASSWORD</label>
+                        <input type="password" id="password2" name="password2" placeholder="Confirm Password" value="" required> <br>
+                    </div>
+                    <button class="typetwo cup" id="login-form"><i class="fas fa-user-circle fa-1x"></i>SIGN UP</button>
                 </form>
-            </div>
+            </div> 
         </div>
         <div class="item4">
             <div id="foot">

@@ -5,13 +5,9 @@ a.linkedin:hover{
     color:#0e76a8;
 }
 
-body{
-    margin:0;
-    background-image: url("peak.jpg"), url("teach1.jpeg");
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    background-position: left, right;
-    background-color: #715144;
+html{
+   background-image: radial-gradient(circle,#243040 20%, #1e2a38 30%, #1b2531 40%, #161d27 60%,  #0a0e13 85% );
+   background-repeat: no-repeat;
 }
 .boom{
     font-size:0.9em;
@@ -23,6 +19,7 @@ body{
 }
 .boomtwo{
     font-size:0.9em;
+    color:white;
 }
 .boomthird{
     text-decoration: none;
@@ -35,12 +32,6 @@ button{
 html,body{
     height:100%;
 }
-.fa-bars{
-    color:black;
-}
-.fa-graduation-cap{
-    padding-right:10px;
-}
 .fa-sign-in-alt, .fa-user-circle{
     padding-right:10px;
 }
@@ -50,17 +41,18 @@ html,body{
     height:70px;
     justify-content: space-around;
     align-items: center;
+    margin:0 auto;
 }
 .nav-links li a{
-    color:#f2d2ac;
+    color:white;
     text-decoration: none;
-    font-size: 22px;
+    font-size: 20px;
     font-family:'Poppins';
     cursor:pointer;
 }
  a.admit:hover{
-    color:black;
-    border-bottom:2px solid black;
+    color:#7cb3e1;
+    border-bottom:2px solid #7cb3e1;
     padding-bottom:5px;
     
 }
@@ -98,78 +90,110 @@ input{
     background-color:transparent;
     
 }
-
-.item1{
-    background-image:linear-gradient(#715144, #715144);
-    color: #f2d2ac;
-    padding:12px 0px 12px 0px;
-    text-align: center;
-    font-size: 55px;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+.nope{
+    color:#721520;
 }
-#item31{
-    border:1px solid #7f604d;
-    border-radius: 1em;
-    width:400px;
-    background-color:#f1f1f1;
-    margin:auto;
+.item1{
+    text-transform: uppercase;
+    color: white;
+    padding-top:22.5px;
     text-align: center;
-    padding:40px 0px 20px;
-    position:relative;
+    font-size: 45px;
+    font-weight: 600;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+    
+ 
+}
+#item3a{
+    text-align: center;
+    margin:0 auto;
+    position: relative;
     top:50%;
-    transform: translateY(-50%);
-    box-shadow: 0 0 20px #7f604d;
+    transform:translateY(-50%);
     
 }
-#item32{
-    border:1px solid #7f604d;
-    box-shadow: 0 0 20px #7f604d;
-    border-radius: 1em;
-    display:none;
-    width:400px;
-    background-color:#f1f1f1;
-    margin:auto;
+#item3b{
     text-align: center;
-    padding:40px 0px 20px;
+    margin:0 auto;
     position:relative;
     top:50%;
-    transform: translateY(-50%);
+    transform:translateY(-50%);
+    display:none;
 }
-
 #note{
-    text-transform: uppercase;
-    color:#654321;
+    color:#721520;
+    font-weight:700;
+    font-size:23px;
+   
     font-family: 'Open Sans', sans-serif;
  
 }
 .typetwo{
+    font-family: 'Open Sans', sans-serif;
     padding:10px ;
-    width:150px;
+    width:416px;
+    text-align: center;
     border-radius:2em;
     margin-top:15px;
     cursor:pointer;
-    background-color:#990011ff;
-    color:white;
+    background-color:white;
+    color:#721520;
+    font-weight:700;
     font-size: 0.9em;
-   
 }
 .typetwo:hover{
     box-shadow: 3px 3px 11px 0px rgba(0, 0, 0, 0.7);
     transform: translate(5px,-5px);
 }
-
+.cup{
+    margin-top:35px;
+}
 ul{
     list-style-type: none;
     margin:0;
     padding:0;
    
 }
-#username, #password, #rusername, #email, #password2{
-    width:60%;
-    margin-bottom:15px;
+label{
+    color:white;
+    font-size: 11px;
+    font-family: 'Open Sans', sans-serif;
+}
+#matricno, #password, #email, #password2{
+    font-family: 'Open Sans', sans-serif;
+    color:white;
+    width:80%;
+    font-size: 14px;
     border:none;
-    border-bottom:thin solid #654321 ;
+    border-left:1px solid white;
+    padding-left: 8px;
 }
-#username, #email{
+
+.item3a1{
+    border:1px solid white;
+    padding:8px;
+    border-radius:2em;
+    width:400px;
+    margin: 0 auto;
+    margin-top:30px;
+    text-align: left;
+    background-color:#111d2d;
+}
+.item3b1{
+    border:1px solid white;
+    padding:8px;
+    border-radius:2em;
+    width:400px;
+    margin: 0 auto;
     margin-top:20px;
+    text-align: left;
+    background-color:#111d2d;
 }
+.item3a2{
+    margin:0 auto;
+}
+#password2{
+    width:60%;
+}
+
