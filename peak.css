@@ -8,6 +8,7 @@ a.linkedin:hover{
 html{
    background-image: radial-gradient(circle,#243040 20%, #1e2a38 30%, #1b2531 40%, #161d27 60%,  #0a0e13 85% );
    background-repeat: no-repeat;
+   background-size: cover;
 }
 .boom{
     font-size:0.9em;
@@ -26,8 +27,11 @@ html{
     color:#08a0e9;
 }
 
-button{
+
+body{
     margin:0;
+    padding:0;
+   
 }
 html,body{
     height:100%;
@@ -123,7 +127,7 @@ input{
     display:none;
 }
 #note{
-    color:#721520;
+    color:white;
     font-weight:700;
     font-size:23px;
    
