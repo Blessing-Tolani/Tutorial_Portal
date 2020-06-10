@@ -1,16 +1,33 @@
+*{
+    box-sizing: border-box;
+}
+a.admit:hover{
+    color:#3a243b ;
+    border-bottom:2px solid #3a243b ;
+    padding-bottom:5px;
+    font-size:18px;
+    
+}
 body{
     padding:0;
     margin:0;
+    
+}
+.item3a{
+    position: relative;
+    top:50%;
+    transform:translateY(-50%);
 }
 body,html{
     height:100%;
 }
 .wrap{
-    padding:60px 40px 0px 0px;
+    text-align: center;
+    padding-top:20px;
 }
 hr{
     width:300%;
-    transform: translateX(-180px);
+    transform: translateX(-210px);
     color: whitesmoke;
 }
 .item2{
@@ -20,7 +37,9 @@ hr{
     font-family: 'Open Sans', sans-serif;
     color:white;
     padding-left:5%;
+    letter-spacing: 1px;
     line-height: 2;
+    font-weight: 600;
 }
 .float{
     float:right;
@@ -29,14 +48,17 @@ hr{
     color:white;
 }
 .text{
-    font-size: 20px;
+    font-size: 25px;
+    color:white;
+    font-weight: 600;
+ 
      
 }
 .image{
     background-color: teal;
     height:150px;
     width:150px;
-    float:right;
+    margin:0 auto;
     background-image: url("fine.jpg");
     background-size: contain; 
     clip-path: circle(70px);
@@ -44,25 +66,33 @@ hr{
 
 .grid-container{
     display:grid;
-    grid-template-columns: 20% auto;
-    grid-template-rows: 250px auto 60px;
-    grid-gap:1px;
+    grid-template-columns: 270px auto;
+    grid-template-rows: 250px auto 90px;
+   
     height:100%;
+    overflow:hidden;
 }
 /* .item1{
     grid-row-start: 1;
     grid-row-end: 3;
+    #131313;
+    color:#161d27;
     background-color:#c0c0c0;
 } */
-.item2,.item1, .item4, .item3{
-    background-color:#161d27;
+.item2, .item4, .item3{
+    /* background-color: green; */
+    background-image: linear-gradient( to right, #3a243b, #1e121e );
+    /* background-color:#392f60; */
+    
+    /* background-image: linear-gradient( to right, #403263, #393161 ); */
+
 }
 .item1{
     grid-row: 1/span 3;
     background-color: #dcdcdc;
 }
 #foot{
-    padding-top:15px;
+    padding-top:10px;
     text-align: center;
     color:white;
     font-family: 'ABeeZee';
@@ -73,4 +103,32 @@ hr{
     padding:0px 3px;
     border-right:thin solid white;
     border-left:thin solid white;
+}
+nav{
+   
+    font-family: 'Poppins', sans-serif;
+}
+.nav-links{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height:100vh;
+}
+.nav-links a{
+    text-decoration: none;
+    color:#131313;
+    letter-spacing: 1px;
+}
+
+ul{
+    list-style-type: none;
+}
+.burger div{
+    width:25px;
+    height:3px;
+    background-color: black;
+    margin:5px;
+}
+.burger{
+    display:none;
 }
