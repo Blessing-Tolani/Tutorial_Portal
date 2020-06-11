@@ -37,7 +37,7 @@
                     </div>
                     <div class="item3a1">
                         <label for="password">PASSWORD</label>
-                        <input type="password" id="password" name="password" placeholder=" Enter Password" required>
+                        <input type="password" id="password" name="password" placeholder=" Enter Password" required pattern = "[^\s]+" minlength="6" title="Password must not contain WhiteSpace, and at least 6 or more characters">
                     </div>
                     <div class="item3a2">
                         <a class="boom" href="#"><p>Forgot password?</p></a>
@@ -53,7 +53,7 @@
                 <form autocomplete = "off" id="signup-form" method="POST" action="https://peak-tutors-ub.herokuapp.com/api/accounts/register/">
                     <div class="item3b1">
                         <label for="email">EMAIL</label>
-                        <input type="email" id="email" name="email" placeholder= "Enter Email" required > <br>
+                        <input type="email" id="email" name="email" placeholder= "Enter Email" required pattern = "^([a-zA-Z0-9_\.]+)@([a-zA-Z0-9_\.]+)\.([A-Za-z]{3})$" title="Requested format is name@example.com"> <br>
                     </div>
                     <div class="item3b1">
                         <label for="signup-matricno">MATRIC NO</label>
@@ -61,7 +61,7 @@
                     </div>
                     <div class="item3b1">
                         <label for="signup-password">PASSWORD</label>
-                        <input type="password" id="signup-password" name="signup-password" placeholder="Enter Password" required pattern> <br>
+                        <input type="password" id="signup-password" name="signup-password" placeholder="Enter Password" required  pattern = "[^\s]+" minlength="6" title="Password must not contain WhiteSpace, and at least 6 or more characters"> <br>
                     </div>
                     <div class="item3b1">
                         <label for="password2">CONFIRM PASSWORD</label>

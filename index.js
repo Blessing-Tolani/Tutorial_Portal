@@ -39,7 +39,7 @@ $(document).ready(function () {
         }).fail(function (error) {
             console.log(error);
           
-            alert("No Active Account found with the given Credentails");
+            alert("No Active Account found with the given Credentails, Kindly Register");
         });
     });
 //Signup code
@@ -69,7 +69,7 @@ $(document).ready(function () {
         }).done(function (response) {
             console.log(response);
             window.localStorage.setItem('Blessing', JSON.stringify (response));
-              
+
             $("#signup-form").append("<div id='countdown'>Account successfully created, redirecting to Login page in <b id='redirect-count'>3</b></div>");
             var count = 3;
             var timer = setInterval(function () {
