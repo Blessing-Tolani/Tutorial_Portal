@@ -32,17 +32,17 @@ function hideSignup (){
     $("#item3a").show();
     $("#item3b").hide();
  }
- function validate (e) {
+function validate (e) {
     e.preventDefault();
-    var pass = $("#password").val();
+    var pass = $("#signup-password").val();
     var confpass = $("#password2").val();
-  
+
     if (pass !== confpass) {
       alert("Passcode don't match: Kindly re-enter the Confirm Passcode");
       return false;
     }
- 
-    $("#login-form").append("<div id='countdown'>Account successfully created, redirecting to Login page in <b id='redirect-count'>5</b></div>");
+
+    $("#signup-form").append("<div id='countdown'>Account successfully created, redirecting to Login page in <b id='redirect-count'>5</b></div>");
     var count = 5;
     var timer = setInterval(function () {
         count--;
@@ -54,4 +54,4 @@ function hideSignup (){
         hideSignup();
         $('#countdown').remove();
     }, 5000);
- }
+}

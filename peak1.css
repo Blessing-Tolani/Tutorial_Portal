@@ -191,7 +191,7 @@
         padding:8px;
     }
  
-    #matricno, #password, #email, #password2{
+    #matricno, #password, #email, #password2, #signup-matricno, #signup-password{
         width:70%;
         font-size: 12px;
     }
@@ -254,7 +254,7 @@
         padding:8px;
     }
  
-    #matricno, #password, #email, #password2{
+    #matricno, #password, #email, #password2, #signup-matricno, #signup-password{
         width:60%;
         font-size: 13px;
     }
@@ -316,7 +316,7 @@
         padding:8px;
     }
  
-    #matricno, #password, #email, #password2{
+    #matricno, #password, #email, #password2, #signup-matricno, #signup-password{
         width:60%;
         font-size: 13px;
     }
@@ -349,7 +349,7 @@
         padding:8px;
     }
  
-    #matricno, #password, #email, #password2{
+    #matricno, #password, #email, #password2, #signup-matricno, #signup-password{
         width:90%;
         font-size: 13px;
         border-left: none;

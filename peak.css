@@ -134,6 +134,10 @@ input{
     font-family: 'Open Sans', sans-serif;
  
 }
+#countdown{
+    font-size:16px;
+    color:white;
+}
 .typetwo{
     font-family: 'Open Sans', sans-serif;
     padding:10px ;
@@ -165,7 +169,7 @@ label{
     font-size: 11px;
     font-family: 'Open Sans', sans-serif;
 }
-#matricno, #password, #email, #password2{
+#matricno, #password, #email, #password2, #signup-matricno, #signup-password{
     font-family: 'Open Sans', sans-serif;
     color:white;
     width:80%;
@@ -174,7 +178,6 @@ label{
     border-left:1px solid white;
     padding-left: 8px;
 }
-
 .item3a1{
     border:1px solid white;
     padding:8px;
