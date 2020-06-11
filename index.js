@@ -1,3 +1,10 @@
+
+function kris(){
+    document.getElementById("item3a").style.display = "none";
+    document.getElementById("item3b").style.display = "block";
+
+  };
+//Login code
 $(document).ready(function () {
     $('#login-form').on('submit', function (e) {
         e.preventDefault();
@@ -15,7 +22,7 @@ $(document).ready(function () {
         }).done(function (response) {
             console.log(response);
             window.localStorage.setItem('Blessing', JSON.stringify (response));
-            alert("Successful!");
+            // alert("Successful!");
 
             $('#login-form')
             var count = 1;
@@ -35,7 +42,7 @@ $(document).ready(function () {
             alert("No Active Account found with the given Credentails");
         });
     });
-
+//Signup code
     $('#signup-form').on('submit', function (e) {
         e.preventDefault();
         var email = $('#email').val();
@@ -43,6 +50,10 @@ $(document).ready(function () {
         var password = $('#signup-password').val();
         var confirm_password = $('#password2').val();
 
+        if (password !== confirm_password) {
+            alert("Password don't match: Kindly re-enter the Confirm Password");
+            return false;
+        }
         $.ajax({
             url: "https://peak-tutors-ub.herokuapp.com/api/accounts/register/",
             method: "POST",
@@ -58,7 +69,20 @@ $(document).ready(function () {
         }).done(function (response) {
             console.log(response);
             window.localStorage.setItem('Blessing', JSON.stringify (response));
-            alert("Successful");
+              
+            $("#signup-form").append("<div id='countdown'>Account successfully created, redirecting to Login page in <b id='redirect-count'>3</b></div>");
+            var count = 3;
+            var timer = setInterval(function () {
+                count--;
+                $('#redirect-count').html(count);
+            }, 1000);
+
+            setTimeout(function () {
+                clearInterval(timer);
+                document.getElementById("item3a").style.display = "block";
+                document.getElementById("item3b").style.display = "none";
+                $('#countdown').remove();
+            }, 3000);
 
         }).fail(function (error) {
             console.log(error);
