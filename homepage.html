@@ -1,3 +1,4 @@
+{% if user.is_authenticated %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -59,3 +60,8 @@
     
 </body>
 </html>
+{% else %}
+<h3>
+    LOG IN to access this page.
+</h3>
+{% endif %}

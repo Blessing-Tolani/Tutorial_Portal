@@ -190,6 +190,10 @@
         width:266px;
         padding:8px;
     }
+    input[type="submit"]:disabled{
+        width:266px;
+        padding:8px;
+    }
  
     #matricno, #password, #email, #password2, #signup-matricno, #signup-password{
         width:70%;
@@ -250,6 +254,10 @@
         
     }
     .typetwo{
+        width:216px;
+        padding:8px;
+    }
+    input[type="submit"]:disabled{
         width:216px;
         padding:8px;
     }
@@ -315,6 +323,10 @@
         width:206px;
         padding:8px;
     }
+    input[type="submit"]:disabled{
+        width:206px;
+        padding:8px;
+    }
  
     #matricno, #password, #email, #password2, #signup-matricno, #signup-password{
         width:60%;
@@ -345,6 +357,10 @@
         
     }
     .typetwo{
+        width:166px;
+        padding:8px;
+    }
+    input[type="submit"]:disabled{
         width:166px;
         padding:8px;
     }

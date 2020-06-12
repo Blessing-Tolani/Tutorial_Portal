@@ -29,7 +29,7 @@
         </div> 
         <div class="item3">
             <div id="item3a">
-                <form autocomplete = "off" id="login-form" method="POST" action= "https://peak-tutors-ub.herokuapp.com/api/accounts/login/">
+                <form autocomplete = "off" id="login-form" method="POST" action= "https://peak-tutors-ub.herokuapp.com/api/accounts/login/" >
                    <span id="note">Welcome Back!</span>
                     <div class="item3a1">
                         <label for="matricno">MATRIC NO</label>
@@ -41,7 +41,7 @@
                     </div>
                     <div class="item3a2">
                         <a class="boom" href="#"><p>Forgot password?</p></a>
-                        <button class="typetwo"><i class="fas fa-sign-in-alt fa-1x"></i>SIGN IN</button> 
+                        <input type="submit" id = "button" value="SIGN IN" class="typetwo">
                     </div>
                 </form>
                 <p class="boomtwo">New to Peak Tutors? 
@@ -67,7 +67,7 @@
                         <label for="password2">CONFIRM PASSWORD</label>
                         <input type="password" id="password2" name="password2" placeholder="Confirm Password" required> <br>
                     </div>
-                    <button type="submit" class="typetwo cup" ><i class="fas fa-user-circle fa-1x"></i>SIGN UP</button>
+                    <input type="submit" id = "signbtn" value="SIGN UP" class="typetwo cup">
                 </form>
             </div> 
         </div>

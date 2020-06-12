@@ -8,8 +8,11 @@ function kris(){
 $(document).ready(function () {
     $('#login-form').on('submit', function (e) {
         e.preventDefault();
+    
         var username = $('#matricno').val();
         var password = $('#password').val();
+
+        $('#button').attr('disabled',true);
         $.ajax({
             url: "https://peak-tutors-ub.herokuapp.com/api/accounts/login/",
             method: "POST",
@@ -38,8 +41,8 @@ $(document).ready(function () {
 
         }).fail(function (error) {
             console.log(error);
-          
-            alert("No Active Account found with the given Credentails, Kindly Register");
+            $('#button').removeAttr('disabled');
+            alert("No Active Account found with the given Credentails");
         });
     });
 //Signup code
@@ -54,6 +57,7 @@ $(document).ready(function () {
             alert("Password don't match: Kindly re-enter the Confirm Password");
             return false;
         }
+        $('#signbtn').attr('disabled',true);
         $.ajax({
             url: "https://peak-tutors-ub.herokuapp.com/api/accounts/register/",
             method: "POST",
@@ -79,6 +83,7 @@ $(document).ready(function () {
 
             setTimeout(function () {
                 clearInterval(timer);
+                $('#signbtn').removeAttr('disabled');
                 document.getElementById("item3a").style.display = "block";
                 document.getElementById("item3b").style.display = "none";
                 $('#countdown').remove();
