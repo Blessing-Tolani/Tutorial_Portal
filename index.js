@@ -24,9 +24,9 @@ $(document).ready(function () {
 
         }).done(function (response) {
             console.log(response);
-            window.localStorage.setItem('Blessing', JSON.stringify (response));
+            // window.localStorage.setItem('Blessing', JSON.stringify (response));
             // alert("Successful!");
-
+            // return true;
             $('#login-form')
             var count = 1;
             var timer = setInterval(function () {
@@ -36,6 +36,9 @@ $(document).ready(function () {
 
             setTimeout(function () {
                 clearInterval(timer);
+                sessionStorage.setItem("AuthenticationState", "Authenticated");
+                // sessionStorage.setItem("AuthenticationExpires", Date.now.addHours(1));
+             
                 window.location.href = 'homepage.html';
             }, 1000);
 

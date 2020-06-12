@@ -1,4 +1,6 @@
-{% if user.is_authenticated %}
+if(sessionStorage.getItem('AuthenticationState') == null){
+        window.open("AccessDenied.html","_self");
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -17,7 +19,6 @@
                
                 <ul class="nav-links">
                     <li><a href="#" class="admit">Update Profile</a></li>
-                    <li><a href="#" class="admit">Payment Activites</a></li>
                     <li><a href="#" class="admit">Register Courses</a></li>
                     <li><a href="#" class="admit">Course List</a></li>
                     <li><a href="#" class="admit">Check Results</a></li>
@@ -60,8 +61,3 @@
     
 </body>
 </html>
-{% else %}
-<h3>
-    LOG IN to access this page.
-</h3>
-{% endif %}
