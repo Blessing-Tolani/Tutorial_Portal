@@ -24,23 +24,37 @@ $(document).ready(function () {
 
         }).done(function (response) {
             console.log(response);
-            // window.localStorage.setItem('Blessing', JSON.stringify (response));
+            window.localStorage.setItem('Accesstoken', JSON.stringify (response.access));
             // alert("Successful!");
             // return true;
-            $('#login-form')
-            var count = 1;
-            var timer = setInterval(function () {
-                count--;
-                $('#redirect-count').html(count);
-            }, 1000);
+                if(response.department == "null" && response.faculty == "null"){
 
-            setTimeout(function () {
-                clearInterval(timer);
-                sessionStorage.setItem("AuthenticationState", "Authenticated");
-                // sessionStorage.setItem("AuthenticationExpires", Date.now.addHours(1));
-             
-                window.location.href = 'homepage.html';
-            }, 1000);
+                    $('#login-form')
+                    var count = 1;
+                    var timer = setInterval(function () {
+                        count--;
+                        $('#redirect-count').html(count);
+                    }, 1000);
+        
+                    setTimeout(function () {
+                        clearInterval(timer);
+                        window.location.href = 'profile.html';
+                    }, 1000);
+                }
+                else{
+                    $('#login-form')
+                    var count = 1;
+                    var timer = setInterval(function () {
+                        count--;
+                        $('#redirect-count').html(count);
+                    }, 1000);
+        
+                    setTimeout(function () {
+                        clearInterval(timer);
+                        window.location.href = 'homepage.html';
+                    }, 1000);
+                }
+           
 
         }).fail(function (error) {
             console.log(error);
