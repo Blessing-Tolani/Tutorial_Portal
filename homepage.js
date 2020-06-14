@@ -1,3 +1,19 @@
+$(document).ready(function () {
+    var LastName = window.localStorage.getItem('LastName');
+    var FirstName = window.localStorage.getItem('FirstName');
+    var MatricNo = window.localStorage.getItem('MatricNo');
+    var Department = window.localStorage.getItem('Department');
+    var Faculty = window.localStorage.getItem('Faculty');
+
+    document.getElementById("text").innerHTML =  LastName +" "+ FirstName;
+    document.getElementById("mat").innerHTML = "MATRIC NO" + "<br>" + MatricNo;
+    document.getElementById("depart").innerHTML = "DEPARTMENT" + "<br>" + Department;
+    document.getElementById("fat").innerHTML = "FACULTY" + "<br>" + Faculty;
+
+});
+
+
+
 
 const navSlide = () => {
     const burger = document.querySelector('.burger');

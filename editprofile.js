@@ -1,7 +1,28 @@
 $(document).ready(function () {
+
+    var LastName = window.localStorage.getItem('LastName');
+    var FirstName = window.localStorage.getItem('FirstName');
+    var MatricNo = window.localStorage.getItem('MatricNo');
+    var Department = window.localStorage.getItem('Department');
+    var Faculty = window.localStorage.getItem('Faculty');
+    var x = window.localStorage.getItem('id');
+    var id = JSON.parse(x);
+
+    var first = document.getElementById("firstname");
+    var last = document.getElementById("lastname");
+    var matric = document.getElementById("matricno");
+    var department = document.getElementById("department");
+    var faculty = document.getElementById("faculty");
+
+    first.value = LastName;
+    last.value = FirstName;
+    matric.value = MatricNo;
+    department.value = Department;
+    faculty.value = Faculty; 
+
     $('#profileupdate').on('submit', function (e) {
         e.preventDefault();
-
+        var id = JSON.parse(x);
         var first_name = $('#firstname').val();
         var last_name = $('#lastname').val();
         var faculty = $('#faculty').val();
@@ -10,10 +31,11 @@ $(document).ready(function () {
         var access = window.localStorage.getItem('Accesstoken');
         $('#profilebtn').attr('disabled',true);
         $.ajax({
-            url: "https://peak-tutors-ub.herokuapp.com/api/accounts/profile-update/",
-            method: "POST",
+            url: "https://peak-tutors-ub.herokuapp.com/api/accounts/profile-update/{id}/",
+            method: "PUT",
            
             data: {
+                id : id,
                 first_name : first_name,
                 last_name : last_name,
                 faculty : faculty,
@@ -28,13 +50,6 @@ $(document).ready(function () {
             dataType: 'JSON'
         }).done(function (response) {
             console.log(response);
-            window.localStorage.setItem('LastName',  (response.last_name));
-            window.localStorage.setItem('FirstName', (response.first_name));
-            window.localStorage.setItem('MatricNo', (response.matric_no));
-            window.localStorage.setItem('Department', (response.the_department));
-            window.localStorage.setItem('Faculty', (response.the_faculty));
-           
-            
             $('#profileupdate')
             var count = 1;
             var timer = setInterval(function () {

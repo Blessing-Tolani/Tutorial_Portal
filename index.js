@@ -25,6 +25,7 @@ $(document).ready(function () {
         }).done(function (response) {
             console.log(response);
             window.localStorage.setItem('Accesstoken', JSON.stringify (response.access));
+            window.localStorage.setItem('id', JSON.stringify (response.id));
             // alert("Successful!");
             // return true;
                 if(response.department == "null" && response.faculty == "null"){
