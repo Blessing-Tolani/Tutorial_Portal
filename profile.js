@@ -12,15 +12,19 @@ $(document).ready(function () {
         $.ajax({
             url: "https://peak-tutors-ub.herokuapp.com/api/accounts/profile-update/",
             method: "POST",
+           
             data: {
                 first_name : first_name,
                 last_name : last_name,
                 faculty : faculty,
                 department: department,
                 matric_no : matric_no,
-                access: JSON.parse(access)
             },
-           
+        
+            headers : {
+                Authorization : "Bearer " + JSON.parse(access)
+            },
+
             dataType: 'JSON'
         }).done(function (response) {
             console.log(response);
