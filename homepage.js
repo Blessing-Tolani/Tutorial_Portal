@@ -29,9 +29,38 @@ $(document).ready(function () {
         $('#profilebtn').removeAttr('disabled');
         alert("Ooops! An Error Occurred");
     });
+        
+   
+
 });
+function logout(){
+    var access = window.localStorage.getItem('Accesstoken');
+    $.ajax({
+        url: "https://peak-tutors-ub.herokuapp.com/api/accounts/logout/" ,
+        method: "POST",
+    
+        headers : {
+            Authorization : "Bearer " + JSON.parse(access)
+        },
 
+        dataType: 'JSON'
+    }).done(function (response){
+        var count = 1;
+        var timer = setInterval(function () {
+            count--;
+            $('#redirect-count').html(count);
+        }, 1000);
 
+        setTimeout(function () {
+            clearInterval(timer);
+            window.location.href = 'index.html';
+        }, 1000);
+    }).fail(function (error) {
+        console.log(error);
+        alert("An Error Occurred, Try Again");
+    });
+    
+}
 
 
 const navSlide = () => {

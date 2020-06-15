@@ -23,12 +23,14 @@ $(document).ready(function () {
             dataType: 'JSON'
 
         }).done(function (response) {
+          
             console.log(response);
             window.localStorage.setItem('Accesstoken', JSON.stringify (response.access));
+            window.localStorage.setItem('Refreshtoken', JSON.stringify (response.refresh));
             window.localStorage.setItem('id', JSON.stringify (response.id));
             
             // alert("Successful!");
-            // // return true;
+             //return true;
                 if(response.department == "null" && response.faculty == "null"){
 
                     $('#login-form')
@@ -59,7 +61,7 @@ $(document).ready(function () {
            
 
         }).fail(function (error) {
-            console.log(error);
+            console.log(error.status);
             $('#button').removeAttr('disabled');
             alert("No Active Account found with the given Credentails");
         });
