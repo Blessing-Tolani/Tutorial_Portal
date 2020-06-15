@@ -1,15 +1,34 @@
 $(document).ready(function () {
-    var LastName = window.localStorage.getItem('LastName');
-    var FirstName = window.localStorage.getItem('FirstName');
-    var MatricNo = window.localStorage.getItem('MatricNo');
-    var Department = window.localStorage.getItem('Department');
-    var Faculty = window.localStorage.getItem('Faculty');
+    var access = window.localStorage.getItem('Accesstoken');
+    var x = window.localStorage.getItem('id');
+    var id = JSON.parse(x);
 
-    document.getElementById("text").innerHTML =  LastName +" "+ FirstName;
-    document.getElementById("mat").innerHTML = "MATRIC NO" + "<br>" + MatricNo;
-    document.getElementById("depart").innerHTML = "DEPARTMENT" + "<br>" + Department;
-    document.getElementById("fat").innerHTML = "FACULTY" + "<br>" + Faculty;
+    $.ajax({
+        url: "https://peak-tutors-ub.herokuapp.com/api/accounts/profile-update/" + id,
+        method: "GET",
+    
+        headers : {
+            Authorization : "Bearer " + JSON.parse(access)
+        },
 
+        dataType: 'JSON'
+    }).done(function (response) {
+        console.log(response);
+        var LastName = response.last_name;
+        var FirstName = response.first_name;
+        var Department = response.the_department;
+        var Faculty = response.the_faculty;
+        var MatricNo = response.matric_no;
+
+        document.getElementById("text").innerHTML =  LastName +" "+ FirstName;
+        document.getElementById("mat").innerHTML = "MATRIC NO" + "<br>" + MatricNo;
+        document.getElementById("depart").innerHTML = "DEPARTMENT" + "<br>" + Department;
+        document.getElementById("fat").innerHTML = "FACULTY" + "<br>" + Faculty;
+    }).fail(function (error) {
+        console.log(error);
+        $('#profilebtn').removeAttr('disabled');
+        alert("Ooops! An Error Occurred");
+    });
 });
 
 

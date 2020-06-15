@@ -1,24 +1,37 @@
 $(document).ready(function () {
-
-    var LastName = window.localStorage.getItem('LastName');
-    var FirstName = window.localStorage.getItem('FirstName');
-    var MatricNo = window.localStorage.getItem('MatricNo');
-    var Department = window.localStorage.getItem('Department');
-    var Faculty = window.localStorage.getItem('Faculty');
+    var access = window.localStorage.getItem('Accesstoken');
     var x = window.localStorage.getItem('id');
     var id = JSON.parse(x);
 
-    var first = document.getElementById("firstname");
-    var last = document.getElementById("lastname");
-    var matric = document.getElementById("matricno");
-    var department = document.getElementById("department");
-    var faculty = document.getElementById("faculty");
+    $.ajax({
+        url: "https://peak-tutors-ub.herokuapp.com/api/accounts/profile-update/" + id,
+        method: "GET",
+    
+        headers : {
+            Authorization : "Bearer " + JSON.parse(access)
+        },
 
-    first.value = LastName;
-    last.value = FirstName;
-    matric.value = MatricNo;
-    department.value = Department;
-    faculty.value = Faculty; 
+        dataType: 'JSON'
+    }).done(function (response) {
+        console.log(response);
+        var LastName = response.last_name;
+        var FirstName = response.first_name;
+        var Department = response.the_department;
+        var Faculty = response.the_faculty;
+
+        var first = document.getElementById("firstname");
+        var last = document.getElementById("lastname");
+        var department = document.getElementById("department");
+        var faculty = document.getElementById("faculty");
+
+        first.value = FirstName;
+        last.value = LastName;
+        department.value = Department;
+        faculty.value = Faculty; 
+    }).fail(function (error) {
+        console.log(error);
+        alert("Ooops! An Error Occurred");
+    });
 
     $('#profileupdate').on('submit', function (e) {
         e.preventDefault();
@@ -27,20 +40,17 @@ $(document).ready(function () {
         var last_name = $('#lastname').val();
         var faculty = $('#faculty').val();
         var department = $('#department').val();
-        var matric_no = $('#matricno').val();
         var access = window.localStorage.getItem('Accesstoken');
         $('#profilebtn').attr('disabled',true);
         $.ajax({
-            url: "https://peak-tutors-ub.herokuapp.com/api/accounts/profile-update/{id}/",
+            url: "https://peak-tutors-ub.herokuapp.com/api/accounts/profile-update/" + id,
             method: "PUT",
            
             data: {
-                id : id,
                 first_name : first_name,
                 last_name : last_name,
                 faculty : faculty,
                 department: department,
-                matric_no : matric_no,
             },
         
             headers : {

@@ -12,81 +12,27 @@
         transform:translateY(-30%);
     }
 }
-@media screen and (max-width:600px){
-    #note{
-        font-size: 23px;
-    }
-    .item2a1{
-        width:350px;
-        margin-top:20px;
-    }
-    .typetwo{
-        width:350px;
-        padding:8px;
-    }
-    input[type="submit"]:disabled{
-        width:350px;
-        padding:8px;
-    }
- 
-    input{
-        width:70%;
-        font-size: 13px;
-    }
-    
-}
-@media screen and (max-width:400px){
-    .item2a1{
-        width:280px;
+@media screen and (max-width:500px){
+    .grid-container{
+        width:100%;
+        height:100%;
+        display:grid;
+        grid-template-columns: auto;
+        grid-template-rows: 180px auto 50px;
+        margin:0 auto;
         
-    }
-    .typetwo{
-        width:280px;
-        padding:8px;
-    }
-    input[type="submit"]:disabled{
-        width:280px;
-        padding:8px;
-    }
-}
-@media screen and (max-width:300px){
-    .item2a1{
-        width:250px;
-        
-    }
-    .typetwo{
-        width:250px;
-        padding:8px;
-    }
-    input[type="submit"]:disabled{
-        width:250px;
-        padding:8px;
-    }
-    
-    #department{
-        width:60%;
     }
     #note{
         font-size: 20px;
     }
 }
-@media screen and (max-width:260px){
-    .item2a1{
-        width:220px;
-        
-    }
-    .typetwo{
-        width:220px;
-        padding:8px;
-    }
-    input[type="submit"]:disabled{
-        width:220px;
-        padding:8px;
-    }
-    
+@media screen and (max-width:360px){
     input{
-        width:50%;
-        font-size: 11px;
+        border:none;
+        border-bottom:1.5px solid #947f7f;
+        background-color: transparent;
+        margin: 8px 0px 20px 0px;
+        width:100%;
+        padding:5px 0px 5px 0px;
     }
-
 }

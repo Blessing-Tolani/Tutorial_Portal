@@ -6,7 +6,6 @@ $(document).ready(function () {
         var last_name = $('#lastname').val();
         var faculty = $('#faculty').val();
         var department = $('#department').val();
-        var matric_no = $('#matricno').val();
         var access = window.localStorage.getItem('Accesstoken');
         $('#profilebtn').attr('disabled',true);
         $.ajax({
@@ -18,7 +17,6 @@ $(document).ready(function () {
                 last_name : last_name,
                 faculty : faculty,
                 department: department,
-                matric_no : matric_no,
             },
         
             headers : {
@@ -28,12 +26,7 @@ $(document).ready(function () {
             dataType: 'JSON'
         }).done(function (response) {
             console.log(response);
-            window.localStorage.setItem('LastName',  (response.last_name));
-            window.localStorage.setItem('FirstName', (response.first_name));
-            window.localStorage.setItem('MatricNo', (response.matric_no));
-            window.localStorage.setItem('Department', (response.the_department));
-            window.localStorage.setItem('Faculty', (response.the_faculty));
-           
+            window.localStorage.setItem('id', JSON.stringify (response.id));
             
             $('#profileupdate')
             var count = 1;
@@ -50,6 +43,9 @@ $(document).ready(function () {
             console.log(error);
             $('#profilebtn').removeAttr('disabled');
             alert("Ooops! An Error Occurred");
+            // if (status code == 403){
+
+            // }
         });
     });
 

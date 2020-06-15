@@ -26,8 +26,9 @@ $(document).ready(function () {
             console.log(response);
             window.localStorage.setItem('Accesstoken', JSON.stringify (response.access));
             window.localStorage.setItem('id', JSON.stringify (response.id));
+            
             // alert("Successful!");
-            // return true;
+            // // return true;
                 if(response.department == "null" && response.faculty == "null"){
 
                     $('#login-form')
@@ -109,7 +110,7 @@ $(document).ready(function () {
 
         }).fail(function (error) {
             console.log(error);
-          
+            $('#button').removeAttr('disabled');
             alert("Something went wrong");
         });
     });

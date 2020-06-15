@@ -2,46 +2,37 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Profile</title>
-    <link rel="stylesheet" href="profile.css" type="text/css">
-    <link rel="stylesheet" href="profile1.css" type="text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=0">
+    <title>profile</title>
+    <link rel = "stylesheet" href = "profile.css" type = "text/css">
+    <link rel = "stylesheet" href = "profile1.css" type = "text/css">
     <link href='https://fonts.googleapis.com/css?family=ABeeZee' rel="stylesheet">
 </head>
 <body>
-    <div class="grid-container">
-        <div class="item1">
-            
+    <div class = "grid-container">
+        <div class = "item1">
+            <div class="wrap">
+                <span id="note">Update Profile</span>
+                <div class="image"></div>
+            </div>
         </div>
-        <div class="item2">
+        <div class = "item2">
             <div class="item2a">
                 <form id="profileupdate" autocomplete = "off"  method="POST" action="https://peak-tutors-ub.herokuapp.com/api/accounts/profile-update/">
-                    <span id="note">Update Profile</span>
-                    <div class="item2a1">
-                        <label for="firstname">FIRST NAME</label>
-                        <input type="text" id="firstname" name="firstname" placeholder="Enter First Name" required> <br>
-                    </div>
-                    <div class="item2a1">
-                        <label for="lastname">LAST NAME</label>
-                        <input type="text" id="lastname" name="lastname" placeholder="Enter Last Name" required> <br>
-                    </div>
-                    <div class="item2a1">
-                        <label for="matricno">MATRIC NO</label> 
-                        <input type="text" id="matricno" name="matricno" placeholder="Enter Matric No" required pattern = "^([A-Za-z]{3})\/([1-9]{1}[0-9]{3})\/([0-9]{3})$" title="Requested format is ABC/2001/101"> <br>
-                    </div>
-                    <div class="item2a1">
-                        <label for="department">DEPARTMENT</label>
-                        <input type="text" id="department" name="department" placeholder="Course of Study" required> <br>
-                    </div>
-                    <div class="item2a1">
-                        <label for="faculty">FACULTY</label> 
-                        <input type="text" id="faculty" name="faculty" placeholder="Faculty" required> <br>
-                    </div>
+                    <label for="firstname">FIRST NAME</label> <br>
+                    <input type="text" id="firstname" name="firstname" placeholder="Enter First Name" required> <br>
+                    <label for="lastname">LAST NAME</label> <br>
+                    <input type="text" id="lastname" name="lastname" placeholder="Enter Last Name" required> <br>
+                    <label for="department">DEPARTMENT</label> <br>
+                    <input type="text" id="department" name="department" placeholder="Course of Study" required> <br>
+                    <label for="faculty">FACULTY</label>  <br>
+                    <input type="text" id="faculty" name="faculty" placeholder="Faculty" required> <br>
                     <input type="submit" id="profilebtn" class="typetwo" value="Update">
                 </form>
             </div>
+         
         </div>
-        <div class="item3">
+        <div class = "item3">
             <div id="foot">
                 <footer>
                     <p><span class="foot"> &#169; 2020 B&#38;U </p>

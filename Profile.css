@@ -1,14 +1,15 @@
 *{
     box-sizing: border-box;
 }
+body,html{
+    height:100%;
+}
 body{
-    background-image: radial-gradient(circle,#c7a8f8 20%,  #9f7bf7 30%, #895df0 50%,#7f52e9 60%,  #7c50eb 70%, #6737db 85% );
-    background-repeat: no-repeat;
-    background-size: cover;
     margin:0;
     padding:0;
-    overflow: hidden;
- }
+    /* background-color: #c9dbfa; */
+   
+}
 #foot{
     text-align: center;
     color:black;
@@ -17,86 +18,64 @@ body{
   
 }
 .foot{
-    color:white;
+    color:black;
     padding:0px 3px;
-    border-right:thin solid white;
-    border-left:thin solid white;
+    border-right:thin solid black;
+    border-left:thin solid black;
 }
 .grid-container{
-    height: 100%;
+   
+    width:450px;
     display:grid;
     grid-template-columns: auto;
-    grid-template-rows: 80px auto 40px;
-    gap:3px;
-}
-.grid-container > div{
-    background-color:transparent;
+    grid-template-rows: 190px auto 40px;
+    margin:0px auto;
+    position: relative;
+    top:50%;
+    transform:translateY(-50%);
    
-}
-html,body{
-    height:100%;
-}
-input{
-    font-family: 'Open Sans', sans-serif;
-    background-color: transparent;
-    width:80%;
-    font-size: 14px;
-    border:none;
-    border-left:1px solid white;
-    padding: 3px 0px 3px 8px;
-    color:white;
-    outline:none;
-}
-input[type="submit"]:disabled{
-    font-family: 'Open Sans', sans-serif;
-    padding:10px ;
-    width:400px;
-    text-align: center;
-    border-radius:2em;
-    margin-top:15px;
-    cursor:pointer;
-    background-color:gray;
-    color:#721520;
-    font-weight:700;
-    font-size: 0.9em;
-    transform: translate(-5px,5px);
-    box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);
-    cursor:not-allowed;
+    
     
 }
-::placeholder{
-    color:#c1c1c1;
+.grid-container > div {
+    background-color: whitesmoke;
 }
-.item1{
-    text-align:center;
-    font-size: 30px;
-    font-weight: 600;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    padding:25px 0px 25px 0px;
-    color:#111d2d;
+body{
+    background-image: radial-gradient(circle,#243040 20%, #1e2a38 30%, #1b2531 40%, #161d27 60%,  #0a0e13 85% );
+    background-repeat: no-repeat;
+    background-size: cover;
+ }
+.image{
+    height:150px;
+    width:150px;
+    margin:0 auto;
+    background-image: url("student1.jpg");
+    background-size: contain; 
+    clip-path: circle(70px);
 }
 .item2a{
-    text-align: center;
-    margin:0 auto;
-    position:relative;
+    padding:50px;
+    padding-bottom:20px;
+    position: relative;
     top:50%;
     transform:translateY(-50%);
     
 }
-.item2a1{
-    border:1px solid white;
-    padding:8px;
-    border-radius:2em;
-    width:400px;
-    margin: 0 auto;
-    margin-top:20px;
-    text-align: left;
-    background-color:#111d2d;
+input{
+    border:none;
+    border-bottom:1.5px solid #947f7f;
+    background-color: transparent;
+    margin: 8px 0px 20px 0px;
+    width:80%;
+    padding:5px 0px 5px 0px;
+    outline:none;
 }
 label{
-    color:white;
-    font-size: 11px;
+    color:#27b4e4;
+    font-size: 14px;
     font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    
 }
 #note{
     color:#111d2d;
@@ -104,23 +83,33 @@ label{
     font-size:25px;
     font-family: 'Open Sans', sans-serif;
 }
-.typetwo{
-    font-family: 'Open Sans', sans-serif;
-    padding:10px ;
-    width:400px;
+.wrap{
     text-align: center;
-    border-radius:2em;
-    margin-top:15px;
-    cursor:pointer;
-    background-color:#111d2d ;
-    color:white;
-    font-weight:700;
-    font-size: 0.9em;
-    text-transform: uppercase;
+    position: relative;
+    top:50%;
+    transform:translateY(-50%);
 }
-.typetwo:hover{
+input[type=submit]{
+    border:thin solid white;
+    padding:10px;
+    border-radius: 2em;
+    background-color: #27b4e4;
+    color:white;
+    text-transform: uppercase;
+    margin-bottom:0px;
+    cursor:pointer;
+    
+}
+input[type="submit"]:disabled{
+    border:none;
+    background-color:gray;
+    color:black;
+    transform: translate(-5px,5px);
+    box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);
+    cursor:not-allowed;
+    
+}
+input[type="submit"]:hover{
     box-shadow: 3px 3px 11px 0px rgba(0, 0, 0, 0.7);
     transform: translate(5px,-5px);
 }
-
-
