@@ -44,6 +44,8 @@ $(document).ready(function () {
                 console.log(response);
                 window.localStorage.setItem('Accesstoken', JSON.stringify (response.access));
                 var access = window.localStorage.getItem('Accesstoken');
+                var x = window.localStorage.getItem('id');
+                var id = JSON.parse(x);
 
                     $.ajax({
                         url: "https://peak-tutors-ub.herokuapp.com/api/accounts/profile-update/" + id,
@@ -92,7 +94,7 @@ $(document).ready(function () {
                 else{
                     alert("An Error Occurred!");
                 }
-                });
+            });
         }      
         else{
             alert("Ooops! An Error Occurred");
