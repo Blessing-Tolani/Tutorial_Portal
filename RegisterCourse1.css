@@ -1,0 +1,73 @@
+@media screen and (max-width:1100px) and (min-height:1000px){
+    .item1{
+        padding-top:20px;
+        font-size: 50px;
+        font-weight: 600;
+    }
+}
+@media screen and (max-width:1023px){
+    .item1{
+     
+        font-size: 45px;
+        font-weight: 600;
+    }
+    html{
+        background-image: radial-gradient(circle,#243040 20%, #1e2a38 30%, #1b2531 40%, #161d27 50%,  #0a0e13 80% );
+        background-repeat: no-repeat;
+     }
+}
+@media screen and (max-width:900px){
+   
+    .item1{
+        padding-top:25px;
+        font-size: 40px;
+        font-weight: 600;
+    }
+}
+@media screen and (max-width:770px){
+   
+    .item1{
+        font-size: 38px;
+        padding-top:26px;
+        font-weight: 600;
+       
+    }
+    .course{
+        font-size: 21px;
+    }
+}
+
+@media screen and (max-width:600px){
+    .item1{
+        font-size: 38px;
+        padding-top:26px;
+        font-weight: 600;
+    }
+    
+}
+@media screen and (max-width:540px){
+   
+     .course{
+        font-size: 20px;
+    }
+    .item1{
+        font-size: 30px;
+        font-weight: 650;
+        padding-top:25px;
+    }
+}
+
+@media screen and (max-width:400px){
+    select,input[type=submit]{
+        width:250px;
+        padding:10px;
+    }
+  
+}
+@media screen and (max-width:300px){
+    select,input[type=submit]{
+        width:200px;
+        padding:7px;
+    }
+  
+}
