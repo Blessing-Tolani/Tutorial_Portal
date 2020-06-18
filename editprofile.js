@@ -78,7 +78,7 @@ $(document).ready(function () {
                     })
             }).fail(function(error){
                 console.log(error);
-                if(error.status == 403){
+                if(error.status == 401){
                     $('#profileupdate')
                     var count = 1;
                     var timer = setInterval(function () {
