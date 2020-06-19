@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="homepage1.css" type="text/css">
     <link href='https://fonts.googleapis.com/css?family=ABeeZee' rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=Poppins' rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+   
 </head>
 <body>
     <div class="grid-container">
@@ -15,10 +17,11 @@
             <nav>
                
                 <ul class="nav-links">
+                    <li><a href="#" class="admit" onclick = "homepage()">Home</a></li>
                     <li><a href="editprofile.html" class="admit">Edit Profile</a></li>
                     <li><a href="RegisterCourse.html" class="admit">Register Courses</a></li>
-                    <li><a href="#" class="admit">Course List</a></li>
-                    <li><a href="#" class="admit">Check Results</a></li>
+                    <li><a href="#" class="admit" onclick="courselist()">Course List</a></li>
+                    <li><a href="#" class="admit" onclick="viewresult()">Check Results</a></li>
                     <li><a href="#" class="admit" onclick="logout()">Sign out</a></li>
                     
                 </ul>
@@ -33,27 +36,63 @@
             </div>
             <div class="wrap">
                 <div class="image"></div>
+               
                 <span id="text"></span>
 
             </div>
         </div>
         <div class="item3">
-            <div class="item3a">
+            <div id="item3a">
                 <p id = "mat"></p>
                 <p id = "depart"></p>
                 <p id = "fat"></p>
            </div>
+           <div id = "item3b">
+            <table id="firsttable">
+                <thead>
+                    <tr>
+                        <th>Session</th>
+                        <th>Semester</th>
+                        <th>Courses</th>
+                        <th>Delete</th>
+                    </tr>
+                </thead>
+                <tbody id="tbody">
+                   
+                </tbody>
+            </table>
+           </div>
+           <div id="item3c">
+                <span id = "rsession"></span>
+                <span id="rsemester"></span>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Course</th>
+                            <th>Test Score</th>
+                            <th>Exam Score</th>
+                            <th>Grade</th>
+                        </tr>
+                    </thead>
+                    <tbody id="secondtbody">
+                       
+                    </tbody>
+                </table>
+           </div>
+
         </div>
         <div class="item4">
             <div id="foot">
                 <footer>
-                    <p><span class="foot"> &#169; 2020 B&#38;U </p>
+                    <span class="foot"> &#169; 2020 B&#38;U
                 </footer>
             </div>  
         </div>
     </div>
     <script src="jqry.js"></script>
     <script src="homepage.js"></script>
+    <script src="CourseList.js"></script>
+    <script src="results.js"></script>
     
     
 </body>

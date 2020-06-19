@@ -105,3 +105,19 @@ input[type="submit"]:hover{
     box-shadow: 3px 3px 11px 0px rgba(255,255,255, 0.2);
     transform: translate(5px,-5px);
 }
+.submit{
+    border:1px solid white;
+    border-radius:2em;
+    width:300px;
+    background-color:#721520;
+    color:white;
+    padding:10px;
+    font-family: 'Open Sans', sans-serif;
+    font-size:14px;
+    cursor:pointer;
+    margin-top:30px;
+}
+.submit:hover{
+    box-shadow: 3px 3px 11px 0px rgba(255,255,255, 0.2);
+    transform: translate(5px,-5px);
+}

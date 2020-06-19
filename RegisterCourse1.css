@@ -58,16 +58,17 @@
 }
 
 @media screen and (max-width:400px){
-    select,input[type=submit]{
+    select,.submit,input[type=submit]{
         width:250px;
         padding:10px;
     }
   
 }
 @media screen and (max-width:300px){
-    select,input[type=submit]{
+    select,.submit,input[type=submit]{
         width:200px;
         padding:7px;
     }
+    
   
 }
