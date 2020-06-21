@@ -2,8 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=0">
+    <title>Check Result</title>
     <link rel="stylesheet" href="homepage.css" type="text/css">
     <link rel="stylesheet" href="homepage1.css" type="text/css">
     <link href='https://fonts.googleapis.com/css?family=ABeeZee' rel="stylesheet">
@@ -17,11 +17,11 @@
             <nav>
                
                 <ul class="nav-links">
-                    <li><a href="#" class="admit" onclick = "homepage()">Home</a></li>
+                    <li><a href="homepage.html" class="admit">Home</a></li>
                     <li><a href="editprofile.html" class="admit">Edit Profile</a></li>
                     <li><a href="RegisterCourse.html" class="admit">Register Courses</a></li>
-                    <li><a href="#" class="admit" onclick="courselist()">Course List</a></li>
-                    <li><a href="#" class="admit" onclick="viewresult()">Check Results</a></li>
+                    <li><a href="CourseList.html" class="admit">Course List</a></li>
+                    <li><a href="#" class="admit">Check Results</a></li>
                     <li><a href="#" class="admit" onclick="logout()">Sign out</a></li>
                     
                 </ul>
@@ -42,30 +42,10 @@
             </div>
         </div>
         <div class="item3">
-            <div id="item3a">
-                <p id = "mat"></p>
-                <p id = "depart"></p>
-                <p id = "fat"></p>
-           </div>
-           <div id = "item3b">
-            <table id="firsttable">
-                <thead>
-                    <tr>
-                        <th>Session</th>
-                        <th>Semester</th>
-                        <th>Courses</th>
-                        <th>Delete</th>
-                    </tr>
-                </thead>
-                <tbody id="tbody">
-                   
-                </tbody>
-            </table>
-           </div>
            <div id="item3c">
                 <span id = "rsession"></span>
                 <span id="rsemester"></span>
-                <table>
+                <table id= "secondtable">
                     <thead>
                         <tr>
                             <th>Course</th>
@@ -90,8 +70,6 @@
         </div>
     </div>
     <script src="jqry.js"></script>
-    <script src="homepage.js"></script>
-    <script src="CourseList.js"></script>
     <script src="results.js"></script>
     
     

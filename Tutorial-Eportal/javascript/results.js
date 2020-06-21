@@ -1,16 +1,7 @@
-
-function homepage(){
-    document.getElementById("item3a").style.display = "block";
-    document.getElementById("item3b").style.display = "none";
-    document.getElementById("item3c").style.display = "none";
-};
-$(document).ready(function () {
+$(document).ready(function(e){
     var access = window.localStorage.getItem('Accesstoken');
-    var x = window.localStorage.getItem('id');
-    var id = JSON.parse(x);
-
     $.ajax({
-        url: "https://peak-tutors-ub.herokuapp.com/api/accounts/profile-update/" + id,
+        url: "https://peak-tutors-ub.herokuapp.com/api/resources/result/",
         method: "GET",
     
         headers : {
@@ -20,16 +11,23 @@ $(document).ready(function () {
         dataType: 'JSON'
     }).done(function (response) {
         console.log(response);
-        var LastName = response.last_name;
-        var FirstName = response.first_name;
-        var Department = response.the_department;
-        var Faculty = response.the_faculty;
-        var MatricNo = response.matric_no;
+        var session = response[0].session;
+        var semester = response[0].semester;
+        document.getElementById("rsession").innerHTML =  "Session:" +" "+  session + "<br>";
+        document.getElementById("rsemester").innerHTML =  "Semester:" +" "+  semester + "<br>";
+        for(i=0; i<response.length; i++){
+           var table = document.getElementById("secondtbody");
+           var row = table.insertRow(i);
+           var cell1 = row.insertCell(0);
+           var cell2 = row.insertCell(1);
+           var cell3 = row.insertCell(2);
+           var cell4 = row.insertCell(3);
+            cell1.innerHTML = response[i].course;
+            cell2.innerHTML = response[i].test_score;
+            cell3.innerHTML = response[i].exam_score;
+            cell4.innerHTML = response[i].grade;
+        }   
 
-        document.getElementById("text").innerHTML =  LastName +" "+ FirstName;
-        document.getElementById("mat").innerHTML = "MATRIC NO" + "<br>" + MatricNo;
-        document.getElementById("depart").innerHTML = "DEPARTMENT" + "<br>" + Department;
-        document.getElementById("fat").innerHTML = "FACULTY" + "<br>" + Faculty;
     }).fail(function (error) {
         console.log(error);
         if (error.status == 403){
@@ -46,11 +44,8 @@ $(document).ready(function () {
                     console.log(response);
                     window.localStorage.setItem('Accesstoken', JSON.stringify (response.access));
                     var access = window.localStorage.getItem('Accesstoken');
-                    var x = window.localStorage.getItem('id');
-                    var id = JSON.parse(x);
-                
                     $.ajax({
-                        url: "https://peak-tutors-ub.herokuapp.com/api/accounts/profile-update/" + id,
+                        url: "https://peak-tutors-ub.herokuapp.com/api/resources/result/",
                         method: "GET",
                     
                         headers : {
@@ -60,19 +55,25 @@ $(document).ready(function () {
                         dataType: 'JSON'
                     }).done(function (response) {
                         console.log(response);
-                        var LastName = response.last_name;
-                        var FirstName = response.first_name;
-                        var Department = response.the_department;
-                        var Faculty = response.the_faculty;
-                        var MatricNo = response.matric_no;
-                
-                        document.getElementById("text").innerHTML =  LastName +" "+ FirstName;
-                        document.getElementById("mat").innerHTML = "MATRIC NO" + "<br>" + MatricNo;
-                        document.getElementById("depart").innerHTML = "DEPARTMENT" + "<br>" + Department;
-                        document.getElementById("fat").innerHTML = "FACULTY" + "<br>" + Faculty;
+                        var session = response[0].session;
+                        var semester = response[0].semester;
+                        document.getElementById("rsession").innerHTML =  "Session:" +" "+  session + "<br>";
+                        document.getElementById("rsemester").innerHTML =  "Semester:" +" "+  semester + "<br>";
+                        for(i=0; i<response.length; i++){
+                           var table = document.getElementById("tbody");
+                           var row = table.insertRow(i);
+                           var cell1 = row.insertCell(0);
+                           var cell2 = row.insertCell(1);
+                           var cell3 = row.insertCell(2);
+                           var cell4 = row.insertCell(3);
+                            cell1.innerHTML = response[i].course;
+                            cell2.innerHTML = response[i].test_score;
+                            cell3.innerHTML = response[i].exam_score;
+                            cell4.innerHTML = response[i].grade;  
+                        }
                     }).fail(function(error){
-                        console.log(error);
-                        alert("Couldn't retrieve details!")
+                            console.log(error);
+                            alert("Couldn't retrieve Results!")
                     });
                 }).fail(function(error){
                     console.log(error);
@@ -92,18 +93,15 @@ $(document).ready(function () {
                         alert("An Error Occurred!");
                     }
                 });
-            }
-            else{
-              
-                alert("Ooops! An Error Occurred");
-            }
-       
+        }
+        else if(error.status == 404){
+            window.location.href = 'index.html';
+        }
+        else{
+            alert("An Error Occurred! ");
+        }
     });
-        
-   
-
 });
-
 function logout(){
     var access = window.localStorage.getItem('Accesstoken');
     $.ajax({
@@ -132,9 +130,6 @@ function logout(){
     });
     
 }
-
-
-
 const navSlide = () => {
     const burger = document.querySelector('.burger');
     const nav = document.querySelector('.nav-links');
@@ -162,4 +157,3 @@ const navSlide = () => {
     });
 }
 navSlide();
-    

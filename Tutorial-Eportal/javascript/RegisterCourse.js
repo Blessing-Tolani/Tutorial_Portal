@@ -68,8 +68,11 @@ $(document).ready(function () {
                 }
             });
         }
+        else if(error.status == 404){
+            window.location.href = 'index.html';
+        }
         else{
-            alert("Total failure!");
+            alert("An Error Occurred!");
         }
     });
 
@@ -103,7 +106,7 @@ $(document).ready(function () {
 
             setTimeout(function () {
                 clearInterval(timer);
-                window.location.href = 'homepage.html';
+                window.location.href = 'CourseList.html';
             }, 1000);
         }).fail(function (error) {
             console.log(error);
@@ -144,11 +147,11 @@ $(document).ready(function () {
                 
                         setTimeout(function () {
                             clearInterval(timer);
-                            window.location.href = 'homepage.html';
+                            window.location.href = 'CourseList.html';
                         }, 1000);
                     }).fail(function(error){
                         console.log(error);
-                        alert("Couldnt enrol courses even after getting token");
+                        alert("An Error Occurred!");
                     });
                 }).fail(function(error){
                      console.log(error);
@@ -166,15 +169,20 @@ $(document).ready(function () {
                      }
                      else{
                         $('#submit').removeAttr('disabled');
-                         alert("An Error Occurred but not 401!");
+                         alert("An Error Occurred!");
                      }
                 });
                 
             } 
+
+            else if(error.status == 400){
+                $('#submit').removeAttr('disabled');
+                alert("You have already registered for this course!")
+            }
             
             else {
                 $('#submit').removeAttr('disabled');
-                alert("Ërror but not 403 tho");
+                alert("An Error Occurred");
             }
         });
     

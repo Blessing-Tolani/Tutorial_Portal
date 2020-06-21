@@ -1,0 +1,10 @@
+@media screen and (max-width:950px){
+    .image1{
+  
+        height:130px;
+        width:130px;
+        background-image: url("student1.jpg");
+        background-size: contain; 
+    }
+    
+}

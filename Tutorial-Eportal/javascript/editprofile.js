@@ -95,7 +95,10 @@ $(document).ready(function () {
                     alert("An Error Occurred!");
                 }
             });
-        }      
+        }  
+        else if(error.status == 404){
+            window.location.href = 'index.html';
+        }    
         else{
             alert("Ooops! An Error Occurred");
         }       
