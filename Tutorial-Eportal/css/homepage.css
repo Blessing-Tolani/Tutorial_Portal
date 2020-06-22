@@ -1,6 +1,7 @@
 *{
     box-sizing: border-box;
 }
+
 /* a.admit:hover{
     color:#3a243b ;
     border-bottom:2px solid #3a243b ;
@@ -14,6 +15,7 @@ body{
   
     
 }
+
 .editprofile{
     background-color: #44f5ff;
   
@@ -50,6 +52,9 @@ body,html{
     font-family: 'Open Sans', sans-serif;
     
 }
+.two{
+    display:none;
+}
 #item3b{
     text-align:center;
     text-transform: uppercase;
@@ -74,11 +79,12 @@ body,html{
     font-family: 'Open Sans', sans-serif;
     color:white;
     letter-spacing: 1px;
-    line-height: 3;
+    line-height: 4;
     font-weight: 600;
     padding-top:50px;
-   
- 
+}
+.wrap1{
+    display:none;
 }
 
 .fas:hover{
@@ -114,6 +120,7 @@ table{
 .profile {
     display:flex;
     justify-content: space-between;
+    background-color: transparent;
 
 }
 #department{
@@ -134,6 +141,9 @@ table{
 }
 .spe{
     width:250px;
+}
+.flow{
+    display:none;
 }
 .icon{
     padding-left:50px;
@@ -183,8 +193,6 @@ table{
     grid-template-rows: 100px auto   50px;
    height:100%;
    margin:0 auto;
-
-   
 }
 #login{
     line-height: 2;
@@ -196,11 +204,16 @@ table{
     position:relative;
     top:50%;
     transform: translateY(-50%);
+    width:1024px;
+    margin:0 auto;
 }
-.item2, .item4, .item3, .item5, .item6{
+.item2, .item4, .item3{
     background-color: #202d36;
   
     /* background-image: linear-gradient( to right, #3a243b, #1e121e ); */
+}
+.button1,.button2{
+    display:none;
 }
 .item5{
     z-index: -1;
@@ -215,7 +228,7 @@ table{
     border-top-right-radius: 1em;
     padding-top:30px;
 }
-.item6{
+.item4{
     border-bottom-right-radius: 1em;
 }
 #foot{
@@ -269,15 +282,13 @@ h4{
  } 
  .nav-links a{
     text-decoration: none;
-    color:#131313;
-    
     color:#395362;
     font-size: 16px;
     font-weight: 600;
  } 
  .nav-links a:hover{
     color: #6dc7d0;
-    border-bottom:2px solid #6dc7d0;
+    border-bottom:2px dashed #6dc7d0;
     padding-bottom: 10px;
     font-size: 15px;
  }
@@ -288,9 +299,10 @@ ul{
 .burger div{
     width:25px;
     height:3px;
-    background-color: black;
+    background-color:white;
     margin:5px;
 }
+
 .burger{
     display:none;
 }

@@ -1,10 +1,261 @@
+@media screen and (max-width:1024px){
+    .wrapper{
+        width:100%;
+    }
+}
 @media screen and (max-width:950px){
     .image1{
   
         height:130px;
         width:130px;
-        background-image: url("student1.jpg");
+        background-image: url("/Tutorial-Eportal/Images/student1.jpg");
         background-size: contain; 
     }
+    .grid-container{
+        display:grid;
+        grid-template-columns:  auto;
+        /* grid-template-rows: auto 150px auto auto auto; */
+        grid-template-rows: 100px auto   50px;
+        grid-gap: 2px;
+       height:100%;
+       margin:0 auto;
+    }
+    .item1{
+        display: none;
+    }
+    .item2{
+        border-top-right-radius: 1em;
+        border-top-left-radius: 1em;
+        padding-top:30px;
+    }
+    .item4{
+        border-bottom-right-radius: 1em;
+        border-bottom-left-radius: 1em;
+    }
     
+    .button1,.button2{
+     
+        display:block;
+        text-align: center;
+        width:50%;
+        float:left;
+    }
+    .editprofile1{
+        background-color: #44f5ff;
+        display:inline-block;
+       
+        width:100px;
+        padding:8px;
+        border-radius:2em;
+        border:none;
+        font-weight: 700;
+        font-family: 'Open Sans', sans-serif;
+    }
+    .editprofile{
+        margin-top:0px;
+        margin-bottom: 0px;
+    }
+    #foot{
+       
+        top:50%;
+        position: relative;
+        transform: translateY(-50%);
+    }
+    .wrap1{
+        display:block;
+    }
+    .item3{
+        padding-top:20px;
+    }
+    .image{
+   
+        height:150px;
+        width:150px;
+        margin:0 auto;
+        background-image: url("/Tutorial-Eportal/Images/student1.jpg");
+        background-size: contain; 
+        clip-path: circle(70px);
+        z-index:1;
+    }
+    .wrapper{
+        height:660px;
+        position:relative;
+        top:30%;
+        transform: translateY(-30%);
+    }
+    .nav-links{
+        display:flex;
+      
+       width:90%;
+        justify-content: space-around;
+       
+     }
+   
+}
+@media screen and (max-width:650px){
+    .spe{
+        width:200px;
+    }
+}
+@media screen and (max-width:580px){
+    .gen1{
+        display: none;
+    }
+    .profile{
+        justify-content: space-around;
+        padding-left: 0px;
+        
+    }
+    .two{
+        display:block;
+    }
+   .burger{
+       display:inline-block;
+       cursor: pointer;
+   }
+   .nav-links{
+    position: absolute;
+    right:0px;
+    height:660px;
+    top:9vh;
+   
+    background-color:#4a515b;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width:280px;
+    z-index: 6;
+    transform: translateX(100%);
+    transition: transform 0.5s ease-in;
+  
+   }
+   .nav-links a{
+       color:white;
+   }
+   .nav-links a:hover{
+    color: black;
+    border-bottom:2px dashed black;
+    padding-bottom: 10px;
+    font-size: 18px;
+ }
+   .nav-links li{
+       opacity:0;
+   }
+   .nav-active{
+    transform: translateX(0%);
+    background-color: #4a515b;
+   }
+   .nav-active{
+    transform: translateX(0%);
+}
+    @keyframes navLinkFade{
+        from{
+            opacity:0;
+            transform:translateX(50px)
+        }
+        to{
+            opacity:1;
+            transform: translateX(0px);
+        }
+    }
+    .bum .line1{
+        transform: rotate(-405deg) translate(-5px,6px);
+        background-color: white;
+
+    }
+    .bum .line2{
+    opacity:0;
+    }
+    .bum .line3{
+        transform: rotate(405deg) translate(-5px,-6px);
+        background-color: white;
+    }
+    @media screen and (max-width:450px){
+        .nav-links{
+            width:250px;
+           
+        }
+        .wrapper{
+            height:90%;
+        }
+    }
+    @media screen and (max-width:400px){
+        .gen{
+            display:none;
+        }
+        .flow{
+            display:block;
+        }
+        #profile{
+            padding-top:0px;
+            
+        }
+        .border{
+            border:1px solid #4a515b;
+            margin:10px;
+           border-radius:1em;
+           padding-left: 10px;
+           background-color:#4a515b;
+           
+          
+        }
+        .item3{
+            line-height: 3;
+        }
+       
+        .wrapper{
+            height:100%;
+           
+        }
+        body{
+            overflow-x: hidden;
+        }
+        #login{
+            display: none;
+        }
+        .spe{
+            width:80%;
+           
+        }
+        .profile{
+           
+            padding-left: 0px;
+        }
+        #department, #faculty{
+            margin-top:0;
+            padding-top: 0;
+        }
+        *{
+            margin:0;
+        }
+        .wrap1{
+            
+            margin-bottom: 10px;
+        }
+        .button1, .button2{
+            margin-bottom: 10px;
+            margin-top: 10px;
+        }
+        
+    }
+    @media screen and (max-width:350px){
+        .spe{
+            width:90%;
+        }
+    }
+    @media screen and (max-width:350px){
+        .spe{
+            width:100%;
+        }
+    }
+    @media screen and (max-width:240px){
+        .button1, .button2{
+            float:none;
+            width:100%;
+        }
+    }
+
+   
+
+   
 }
