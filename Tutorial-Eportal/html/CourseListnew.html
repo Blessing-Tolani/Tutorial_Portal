@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=0">
+    <title>Course List</title>
+    <link rel="stylesheet" href="/Tutorial-Eportal/css/homepage.css" type="text/css">
+    <link rel="stylesheet" href="/Tutorial-Eportal/css/homepage2.css" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=ABeeZee' rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Arbutus' rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+   
+</head>
+<body>
+    <div class="wrapper">
+    <div class="grid-container">
+        <div class="item1">
+            <div class="wrap">
+                <div class="image"></div>
+                <a href="editprofile.html"><button class="editprofile">Edit Profile</button></a>
+            </div>           
+            <p class="icon"><i class="fa fa-user"></i><span id="text"></span></p>
+            <p class="icon"><i class="far fa-calendar-alt"></i>Joined <span id="time">March 2018</span></p> </p> 
+            <div id="chair"><img class = "chair" src = "/Tutorial-Eportal/Images/chair.jpg"></div>
+            <div class="extra"> <button class="editprofile" onclick="logout()">Log Out</button></div>
+        </div>
+        <div class="item2">
+            <nav>
+                <div class="logo"><h4>Course List</h4></div>
+                <ul class="nav-links" style="width:60%;">
+                    <li><a href="homepage.html" class="admit">Home</a></li>
+                    <!-- <li><a href="editprofile.html" class="admit">Edit Profile</a></li> -->
+                    <li><a href="RegisterCourse.html" class="admit">Register Courses</a></li>
+                    <li><a href="Result.html" class="admit">Check Results</a></li>
+                    <!-- <li><a href="#" class="admit" onclick="logout()">Sign out</a></li> -->
+                    
+                </ul>
+                <div class="burger">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </div>
+            </nav>
+            
+           
+        </div>
+        <div class="item3">
+            <div class="wrap1">
+                <div class="image"></div>
+            </div>  
+            <div id = "item3b">
+               
+                <table id="firsttable">
+                    <thead>
+                        <tr>
+                            <th>Session</th>
+                            <th>Semester</th>
+                            <th>Courses</th>
+                            <th>Delete</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tbody">
+                        <!-- <tr>
+                            <td>2019/2020</td>
+                            <td>First</td>
+                            <td>MTH101</td>
+                            <td>Delete</td>
+                        </tr>
+                        <tr>
+                            <td>2019/2020</td>
+                            <td>First</td>
+                            <td>MTH101</td>
+                            <td>Delete</td>
+                        </tr> -->
+                    </tbody>
+                </table>
+                <ul>
+                    <li id="courselist">
+                        <!-- <div id="border1">
+                             SESSION : <span id="session"> 2020/2021 </span> <br> 
+                             SEMESTER : <span id="semester"> First </span> <br>
+                             COURSE : <span id="course"> MTH101 </span> <br>
+                             DELETE
+                        </div> -->
+                     
+                   
+                       
+                    </li>
+                    
+                </ul>
+                
+                
+               </div>
+
+        </div>
+        <div class="item4">
+          
+            <div id="foot">
+                <footer>
+                    <span class="foot"> &#169; 2020 B&#38;U
+                </footer>
+            </div>  
+        </div>
+      
+       
+       
+    </div>
+    </div>
+    <script src="/Tutorial-Eportal/javascript/jqry.js"></script>
+    <script src="/Tutorial-Eportal/javascript/CourseList.js"></script>
+    <script src="/Tutorial-Eportal/javascript/CourseList1.js"></script>
+  
+    
+    
+</body>
+</html>

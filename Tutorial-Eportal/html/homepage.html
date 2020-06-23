@@ -19,12 +19,12 @@
         <div class="item1">
             <div class="wrap">
                 <div class="image"></div>
-                <button class="editprofile">Edit Profile</button>
+                <a href="editprofile.html"><button class="editprofile">Edit Profile</button></a>
             </div>           
-            <p class="icon"><i class="fa fa-user"></i><span id="text">John Doe</span></p>
+            <p class="icon"><i class="fa fa-user"></i><span id="text"></span></p>
             <p class="icon"><i class="far fa-calendar-alt"></i>Joined <span id="time">March 2018</span></p> </p> 
             <div id="chair"><img class = "chair" src = "/Tutorial-Eportal/Images/chair.jpg"></div>
-            <div class="extra"> <button class="editprofile">Log Out</button></div>
+            <div class="extra"> <button class="editprofile" onclick="logout()">Log Out</button></div>
         </div>
         <div class="item2">
             <nav>
@@ -33,7 +33,7 @@
                     <li><a href="homepage.html" class="admit">Home</a></li>
                     <!-- <li><a href="editprofile.html" class="admit">Edit Profile</a></li> -->
                     <li><a href="RegisterCourse.html" class="admit">Register Courses</a></li>
-                    <li><a href="CourseList.html" class="admit">Course List</a></li>
+                    <li><a href="CourseListnew.html" class="admit">Course List</a></li>
                     <li><a href="Result.html" class="admit">Check Results</a></li>
                     <!-- <li><a href="#" class="admit" onclick="logout()">Sign out</a></li> -->
                     
@@ -53,22 +53,22 @@
             </div>     
             <ul class="profile">
                 <li class="spe">
-                    <div class="border"> USER NAME <br> <span id="name">Adebola Adeseun </span><i class="fas fa-user-circle"></i></div>
-                    <div class="border"><p id="profile"> DEPARTMENT<br><div id="department"> Computer Engineering</div></p></div>
+                    <div class="border"> USER NAME <br> <span id="name"> </span><i class="fas fa-user-circle"></i></div>
+                    <div class="border"><p id="profile"> DEPARTMENT<br><div id="department"></div></p></div>
                     <p id="login">Last Login <br><span id="date"> 20-June-2020</span></p>
-                    <div class="flow"><div class="border"><p>MATRIC NO <br><span id="matricno">EEG/2015/098 </span></p></div>
-                    <div class="border"><p id="profile">FACULTY <br><div id="faculty">Technology</div></div>
-                    <div class="border"><p class="two">GENDER <br><span id="gender">Male</span></p></p></div></div>
+                    <div class="flow"><div class="border"><p>MATRIC NO <br><span id="matricno"></span></p></div>
+                    <div class="border"><p id="profile">FACULTY <br><div id="faculty"></div></div>
+                    <div class="border"><p class="two">GENDER <br><span id="gender"></span></p></p></div></div>
                 </li>
-                <li class="gen"> MATRIC NO <br><span id="matricno">EEG/2015/098 </span><p id="profile">FACULTY <br><div id="faculty">Technology</div></p>
-                    <p class="two">GENDER <br><span id="gender">Male</span></p>
+                <li class="gen"> MATRIC NO <br><span id="matricno1"></span><p id="profile">FACULTY <br><div id="faculty1"></div></p>
+                    <p class="two">GENDER <br><span id="gender"></span></p>
                 </li>
-                <li class="gen1">GENDER <br><span id="gender">Male</span><p id="profile"><div class="image1"></div></p></li>
+                <li class="gen1">GENDER <br><span id="gender"></span><p id="profile"><div class="image1"></div></p></li>
             </ul>
             <div class="button1">
-                <button class="editprofile one">Edit Profile</button> 
+                <a href="editprofile.html"><button class="editprofile one">Edit Profile</button></a> 
             </div>
-            <div class="button2"><button class="editprofile1">Log Out</button></div>
+            <div class="button2"><button class="editprofile1" onclick="logout()" >Log Out</button></div>
             <!-- <div class="profile">
                 User Name <br>
                 Blessing 
@@ -116,7 +116,7 @@
     </div>
     </div>
     <script src="/Tutorial-Eportal/javascript/jqry.js"></script>
-    <script src="/Tutorial-Eportal/javascript/homepage1.js"></script>
+    <script src="/Tutorial-Eportal/javascript/homepage.js"></script>
   
     
     

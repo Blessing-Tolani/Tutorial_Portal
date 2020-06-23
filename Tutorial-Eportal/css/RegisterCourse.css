@@ -83,7 +83,7 @@ input[type=submit]{
     border:1px solid white;
     border-radius:2em;
     width:300px;
-    background-color:#721520;
+    background-image: linear-gradient(#3d4f68,#0d151f);
     color:white;
     padding:10px;
     font-family: 'Open Sans', sans-serif;
@@ -109,7 +109,7 @@ input[type="submit"]:hover{
     border:1px solid white;
     border-radius:2em;
     width:300px;
-    background-color:#721520;
+    background-image: linear-gradient(#3d4f68,#0d151f);
     color:white;
     padding:10px;
     font-family: 'Open Sans', sans-serif;

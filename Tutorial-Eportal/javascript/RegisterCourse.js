@@ -106,7 +106,7 @@ $(document).ready(function () {
 
             setTimeout(function () {
                 clearInterval(timer);
-                window.location.href = 'CourseList.html';
+                window.location.href = 'CourseListnew.html';
             }, 1000);
         }).fail(function (error) {
             console.log(error);
@@ -147,7 +147,7 @@ $(document).ready(function () {
                 
                         setTimeout(function () {
                             clearInterval(timer);
-                            window.location.href = 'CourseList.html';
+                            window.location.href = 'CourseListnew.html';
                         }, 1000);
                     }).fail(function(error){
                         console.log(error);

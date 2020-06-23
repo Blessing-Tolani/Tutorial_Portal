@@ -22,9 +22,12 @@ $(document).ready(function () {
         var MatricNo = response.matric_no;
 
         document.getElementById("text").innerHTML =  LastName +" "+ FirstName;
-        document.getElementById("mat").innerHTML = "MATRIC NO" + "<br>" + MatricNo;
-        document.getElementById("depart").innerHTML = "DEPARTMENT" + "<br>" + Department;
-        document.getElementById("fat").innerHTML = "FACULTY" + "<br>" + Faculty;
+        document.getElementById("name").innerHTML =  LastName +" "+ FirstName;
+        document.getElementById("matricno").innerHTML = MatricNo;
+        document.getElementById("matricno1").innerHTML = MatricNo;
+        document.getElementById("department").innerHTML =Department;
+        document.getElementById("faculty").innerHTML =  Faculty;
+        document.getElementById("faculty1").innerHTML =  Faculty;
     }).fail(function (error) {
         console.log(error);
         if (error.status == 403){
@@ -60,11 +63,14 @@ $(document).ready(function () {
                         var Department = response.the_department;
                         var Faculty = response.the_faculty;
                         var MatricNo = response.matric_no;
-                
+
                         document.getElementById("text").innerHTML =  LastName +" "+ FirstName;
-                        document.getElementById("mat").innerHTML = "MATRIC NO" + "<br>" + MatricNo;
-                        document.getElementById("depart").innerHTML = "DEPARTMENT" + "<br>" + Department;
-                        document.getElementById("fat").innerHTML = "FACULTY" + "<br>" + Faculty;
+                        document.getElementById("name").innerHTML =  LastName +" "+ FirstName;
+                        document.getElementById("matricno").innerHTML =  MatricNo;
+                        document.getElementById("matricno1").innerHTML = MatricNo;
+                        document.getElementById("department").innerHTML =  Department;
+                        document.getElementById("faculty").innerHTML = Faculty;
+                        document.getElementById("faculty1").innerHTML =  Faculty;
                     }).fail(function(error){
                         console.log(error);
                         alert("Couldn't retrieve details!")

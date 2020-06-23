@@ -49,7 +49,7 @@ body{
     height:150px;
     width:150px;
     margin:0 auto;
-    background-image: url("student1.jpg");
+    background-image: url("/Tutorial-Eportal/Images/student1.jpg");
     background-size: contain; 
     clip-path: circle(70px);
 }

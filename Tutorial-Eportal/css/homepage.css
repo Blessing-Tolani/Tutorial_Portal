@@ -15,7 +15,9 @@ body{
   
     
 }
-
+#border1{
+    display:none;
+}
 .editprofile{
     background-color: #44f5ff;
   
@@ -27,6 +29,12 @@ body{
     border:none;
     font-weight: 700;
     font-family: 'Open Sans', sans-serif;
+}
+.editprofile:hover{
+    background-color: #b1f8fc;
+}
+.editprofile1:hover{
+    background-color: #b1f8fc;
 }
 #item3a{
     position: relative;
@@ -55,12 +63,21 @@ body,html{
 .two{
     display:none;
 }
+#tbody{
+    color:#6dc7d0;
+    font-size: 15px;
+    text-transform: capitalize;
+}
 #item3b{
     text-align:center;
     text-transform: uppercase;
-    top:20%;
-    transform:translateY(-20%);
+    position: relative;
+    top:5%;
+    transform:translateY(-5%);
     
+}
+#center{
+    text-align: center;
 }
 #item3c{
     text-transform: uppercase;
@@ -69,6 +86,10 @@ body,html{
     transform:translateY(-10%);
     text-align: center;
   
+}
+#know{
+     color:white;
+     font-size: 15px;
 }
 .list{
     color:white;
@@ -90,10 +111,10 @@ body,html{
 .fas:hover{
     color:red;
 }
+/* #firsttable{
+    display:none;
+} */
 
-#mat,#depart,#fat{
-    padding-left: 10%;
-}
 .float{
     float:right;
     padding-top:40px;
@@ -210,7 +231,6 @@ table{
 .item2, .item4, .item3{
     background-color: #202d36;
   
-    /* background-image: linear-gradient( to right, #3a243b, #1e121e ); */
 }
 .button1,.button2{
     display:none;
@@ -244,13 +264,12 @@ table{
     border-right:thin solid white;
     border-left:thin solid white;
 }
-#mat, #depart, #fat{
-    text-transform: uppercase;
-}
-#name, #department, #matricno, #faculty, #gender{
+
+#name, #department, #matricno, #faculty, #gender, #matricno1, #faculty1{
     color: #6dc7d0;
     font-size: 16px;
     line-height: 2;
+    text-transform: capitalize;
 }
 #date{
     color: #6dc7d0;

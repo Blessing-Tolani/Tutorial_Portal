@@ -24,6 +24,24 @@ $(document).ready(function (e){
                  cell3.innerHTML = response[i].course;
                  cell4.innerHTML = '<a  id = "set" onclick="allow(this.id)"> <i class="fas fa-trash"></i></a>'
                 $("#set").attr('id', response[i].id)
+                $('#courselist').append('<div id="border1"></div>');
+                $('#border1').append('<span id="session"></span>');
+                $('#session').append('<span id="know">SESSION:</span>' + " " + response[i].session +"<br>");
+                $('#border1').append('<span id="semester"></span>'); 
+                $('#semester').append('<span id="know">SEMESTER:</span>' + " " + response[i].semester  +"<br>");
+                $('#border1').append('<span id="course"></span>');
+                $('#course').append('<span id="know">COURSE:</span>' + " " + response[i].course  +"<br>");
+                $('#border1').append('<div id="center"><i class="fas fa-trash"></i></div>');
+
+
+
+                // var x = $('session').append();
+                // var y = $('semester').append(response[i].semester);
+                // var z = $('session').append(response[i].course);
+                // $('#border1').append(x);
+                // $('#border1').append(y);
+                // $('#border1').append(z);
+
             }   
             return response;
         }).fail(function (error) {
@@ -66,6 +84,8 @@ $(document).ready(function (e){
                                  cell3.innerHTML = response[i].course;
                                  cell4.innerHTML = '<a id = "set" onclick="allow(this.id)"> <i class="fas fa-trash"></i></a>'
                                  $("#set").attr('id', response[i].id)
+                                 $('#courselist').append('<div id="border1"></div>');
+                                 $('#border1').append(response[i].session);
                              }   
                             
                         }).fail(function(error){
@@ -126,7 +146,7 @@ function allow(clicked){
     
                 setTimeout(function () {
                     clearInterval(timer);
-                    window.location.href = 'CourseList.html';
+                    window.location.href = 'CourseListnew.html';
                 }, 1000);
             }).fail(function(error){
                 console.log(error);
