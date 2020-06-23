@@ -8,12 +8,13 @@
   
         height:130px;
         width:130px;
-        
+        background-image: url("/Tutorial-Eportal/Images/student1.jpg");
+        background-size: contain; 
     }
     .grid-container{
         display:grid;
         grid-template-columns:  auto;
-        /* grid-template-rows: auto 150px auto auto auto; */
+        
         grid-template-rows: 100px auto   50px;
         grid-gap: 2px;
        height:100%;
@@ -71,7 +72,8 @@
         height:150px;
         width:150px;
         margin:0 auto;
-       
+        background-image: url("/Tutorial-Eportal/Images/student1.jpg");
+        background-size: contain; 
         clip-path: circle(70px);
         z-index:1;
     }
@@ -178,7 +180,7 @@
            
         }
         .wrapper{
-            height:90%;
+            height:100%;
         }
     }
     @media screen and (max-width:400px){
@@ -195,16 +197,30 @@
         #firsttable{
             display:none;
         }
-        #border1{
+       
+        #tbody1{
             display:block;
+        }
+        .border1{
             margin:0 auto;
             text-align: left;
             border:1px solid #4a515b;
             background-color: #4a515b;
             border-radius: 1em;
-            width:70%;
-            padding-left: 15px;
+            width:100%;
+            padding: 20px;
             margin-bottom:20px;
+            line-height: 2;
+            display:flex;
+            flex-direction: column;
+            color:#44f5ff;
+            font-size: 14px;
+            text-transform: capitalize;
+           
+        }
+        #name, #department, #matricno, #faculty, #gender, #matricno1, #faculty1{
+            color: #6dc7d0;
+            font-size: 14px;
             line-height: 2;
            
         }
@@ -214,17 +230,14 @@
             transform: translateY(-10%);
             padding-bottom:10px;
         }
-        #session, #semester, #course, .fas{
-            color:#44f5ff;
-            font-size: 14px;
-            text-transform: capitalize;
-        }
+      
         .border{
             border:1px solid #4a515b;
             margin:10px;
            border-radius:1em;
            padding-left: 10px;
            background-color:#4a515b;
+           font-size:15px;
          
         }
         .item3{
@@ -275,10 +288,10 @@
         .spe{
             width:90%;
         }
-        #border1{
+        .border1{
             
           
-            width:80%;
+            width:100%;
             
         }
     }
@@ -291,19 +304,19 @@
         .spe{
             width:100%;
         }
-        #border1{
-           
+        .border1{
+           font-size: 13.8px;
             width:90%;
         }
-        #session, #semester, #course, .fas, #know{
-         
+        #know{
+            
             font-size: 14px;
             
-        }
+       }
         
     }
     @media screen and (max-width:220px){
-        #border1{
+        .border1{
             font-size: 14px;
             width:100%;
         }

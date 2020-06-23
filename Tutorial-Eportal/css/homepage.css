@@ -2,20 +2,18 @@
     box-sizing: border-box;
 }
 
-/* a.admit:hover{
-    color:#3a243b ;
-    border-bottom:2px solid #3a243b ;
-    padding-bottom:5px;
-    font-size:18px;
-    
-} */
 body{
     padding:0;
     background-color: #4a515b;
   
     
 }
-#border1{
+
+#firsttable1{
+    margin:0 auto;
+  
+}
+#tbody1{
     display:none;
 }
 .editprofile{
@@ -29,6 +27,9 @@ body{
     border:none;
     font-weight: 700;
     font-family: 'Open Sans', sans-serif;
+}
+.fom{
+    text-align: center;
 }
 .editprofile:hover{
     background-color: #b1f8fc;
@@ -87,7 +88,7 @@ body,html{
     text-align: center;
   
 }
-#know{
+.know{
      color:white;
      font-size: 15px;
 }
@@ -111,9 +112,6 @@ body,html{
 .fas:hover{
     color:red;
 }
-/* #firsttable{
-    display:none;
-} */
 
 .float{
     float:right;
@@ -121,16 +119,16 @@ body,html{
     padding-right:20px;
     color:white;
 }
-table,th,td{
+#firsttable,tr{
     border:thin solid #dcdcdc;
     border-collapse: collapse;
     
 }
-th,td{
+th,tr{
     padding:5px;
   
 }
-table{
+#firsttable{
    width:90%;
   text-align: center;
   margin:0 auto;
@@ -199,7 +197,7 @@ table{
     height:150px;
     width:170px;
     border-radius: 1em;
-    /* margin-left:30px; */
+  
 }
 #chair{
     margin:0 auto;
@@ -210,7 +208,6 @@ table{
 .grid-container{
     display:grid;
     grid-template-columns: 270px auto;
-    /* grid-template-rows: auto 150px auto auto auto; */
     grid-template-rows: 100px auto   50px;
    height:100%;
    margin:0 auto;
@@ -264,12 +261,17 @@ table{
     border-right:thin solid white;
     border-left:thin solid white;
 }
-
+.fa-user-circle{
+    color:#44f5ff;
+}
 #name, #department, #matricno, #faculty, #gender, #matricno1, #faculty1{
     color: #6dc7d0;
     font-size: 16px;
     line-height: 2;
     text-transform: capitalize;
+}
+#matricno1,  #matricno{
+    text-transform: uppercase;
 }
 #date{
     color: #6dc7d0;
