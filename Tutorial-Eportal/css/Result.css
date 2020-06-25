@@ -1,0 +1,26 @@
+@media screen and (max-width:480px){
+    #firsttable{
+        display:none;
+    }
+   
+    #tbody1{
+        display:block;
+    }
+    .border1{
+        margin:0 auto;
+        text-align: left;
+        border:1px solid #4a515b;
+        background-color: #4a515b;
+        border-radius: 1em;
+        width:100%;
+        padding: 20px;
+        margin-bottom:20px;
+        line-height: 2;
+        display:flex;
+        flex-direction: column;
+        color:#44f5ff;
+        font-size: 14px;
+        text-transform: capitalize;
+       
+    }
+}

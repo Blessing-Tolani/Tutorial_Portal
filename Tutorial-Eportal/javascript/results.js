@@ -11,21 +11,39 @@ $(document).ready(function(e){
         dataType: 'JSON'
     }).done(function (response) {
         console.log(response);
-        var session = response[0].session;
-        var semester = response[0].semester;
-        document.getElementById("rsession").innerHTML =  "Session:" +" "+  session + "<br>";
-        document.getElementById("rsemester").innerHTML =  "Semester:" +" "+  semester + "<br>";
         for(i=0; i<response.length; i++){
-           var table = document.getElementById("secondtbody");
+           var table = document.getElementById("tbody");
            var row = table.insertRow(i);
            var cell1 = row.insertCell(0);
            var cell2 = row.insertCell(1);
            var cell3 = row.insertCell(2);
            var cell4 = row.insertCell(3);
-            cell1.innerHTML = response[i].course;
-            cell2.innerHTML = response[i].test_score;
-            cell3.innerHTML = response[i].exam_score;
-            cell4.innerHTML = response[i].grade;
+           var cell5 = row.insertCell(4);
+           var cell6 = row.insertCell(5);
+            cell1.innerHTML = response[i].session;
+            cell2.innerHTML = response[i].semester;
+            cell3.innerHTML = response[i].course;
+            cell4.innerHTML = response[i].test_score;
+            cell5.innerHTML = response[i].exam_score;
+            cell6.innerHTML = response[i].grade;
+
+            var table = document.getElementById("tbody1");
+            var row1 = table.insertRow(i);
+            row1.className = "border1";
+            var cell1 = row1.insertCell(0);
+            var cell2 = row1.insertCell(1);
+            var cell3 = row1.insertCell(2);
+            var cell4 = row1.insertCell(3);
+            var cell5 = row1.insertCell(4);
+            var cell6 = row1.insertCell(5);
+            cell1.innerHTML = ('<span class="know">SESSION:</span>' + " " + response[i].session);
+            cell2.innerHTML =  ('<span class="know">SEMESTER:</span>' + " " + response[i].semester);
+            cell3.innerHTML = ('<span class="know">COURSE:</span>' + " " + response[i].course);
+            cell4.innerHTML = ('<span class="know">TEST SCORE:</span>' + " " + response[i].test_score);
+            cell5.innerHTML =  ('<span class="know">EXAM SCORE:</span>' + " " + response[i].exam_score);
+            cell6.innerHTML = ('<span class="know">GRADE:</span>' + " " + response[i].grade);
+            
+
         }   
 
     }).fail(function (error) {
@@ -55,10 +73,6 @@ $(document).ready(function(e){
                         dataType: 'JSON'
                     }).done(function (response) {
                         console.log(response);
-                        var session = response[0].session;
-                        var semester = response[0].semester;
-                        document.getElementById("rsession").innerHTML =  "Session:" +" "+  session + "<br>";
-                        document.getElementById("rsemester").innerHTML =  "Semester:" +" "+  semester + "<br>";
                         for(i=0; i<response.length; i++){
                            var table = document.getElementById("tbody");
                            var row = table.insertRow(i);
@@ -66,10 +80,30 @@ $(document).ready(function(e){
                            var cell2 = row.insertCell(1);
                            var cell3 = row.insertCell(2);
                            var cell4 = row.insertCell(3);
-                            cell1.innerHTML = response[i].course;
-                            cell2.innerHTML = response[i].test_score;
-                            cell3.innerHTML = response[i].exam_score;
-                            cell4.innerHTML = response[i].grade;  
+                           var cell5 = row.insertCell(4);
+                           var cell6 = row.insertCell(5);
+                            cell1.innerHTML = response[i].session;
+                            cell2.innerHTML = response[i].semester;
+                            cell3.innerHTML = response[i].course;
+                            cell4.innerHTML = response[i].test_score;
+                            cell5.innerHTML = response[i].exam_score;
+                            cell6.innerHTML = response[i].grade;
+
+                            var table = document.getElementById("tbody1");
+                            var row1 = table.insertRow(i);
+                            row1.className = "border1";
+                            var cell1 = row1.insertCell(0);
+                            var cell2 = row1.insertCell(1);
+                            var cell3 = row1.insertCell(2);
+                            var cell4 = row1.insertCell(3);
+                            var cell5 = row1.insertCell(4);
+                            var cell6 = row1.insertCell(5);
+                            cell1.innerHTML = ('<span class="know">SESSION:</span>' + " " + response[i].session);
+                            cell2.innerHTML =  ('<span class="know">SEMESTER:</span>' + " " + response[i].semester);
+                            cell3.innerHTML = ('<span class="know">COURSE:</span>' + " " + response[i].course);
+                            cell4.innerHTML = ('<span class="know">TEST SCORE:</span>' + " " + response[i].test_score);
+                            cell5.innerHTML =  ('<span class="know">EXAM SCORE:</span>' + " " + response[i].exam_score);
+                            cell6.innerHTML = ('<span class="know">GRADE:</span>' + " " + response[i].grade);
                         }
                     }).fail(function(error){
                             console.log(error);
